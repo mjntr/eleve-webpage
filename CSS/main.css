@@ -46,10 +46,17 @@ nav ul li a {
   font-weight: bold;
 }
 nav ul li a:hover {
-  color: #df8f9c;
+  color: #80a6cb;
 }
 
 /* Main content styles */
+img {
+  width: 20rem;
+  height: auto;
+}
+.main-image {
+  width: 100%;
+}
 
 /* Heading styles */
 h1,
@@ -89,7 +96,7 @@ p1 {
   font-weight: bold;
 }
 .category-item a:hover {
-  color: #df8f9c;
+  color: #80a6cb;
 }
 
 /* Footer styles */
@@ -113,7 +120,7 @@ footer {
   text-decoration: none;
 }
 .footer-links a:hover {
-  color: #df8f9c;
+  color: #80a6cb;
 }
 h4,
 h5,
