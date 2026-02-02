@@ -25,6 +25,56 @@ header {
   padding: 1rem 0;
 }
 
+/* Grid */
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "image image image"
+    "about about about"
+    "essentials essentials essentials"
+    "footer footer footer"
+    "copyright copyright copyright";
+  grid-template-rows: auto;
+  grid-auto-flow: column;
+  margin: 0;
+  padding: 0;
+  align-items: baseline;
+}
+
+.navigation-bar {
+  grid-area: header;
+}
+
+.main-image-section {
+  grid-area: image;
+}
+
+.about-section {
+  grid-area: about;
+}
+
+.product-essentials {
+  grid-area: essentials;
+}
+
+.footer-menu {
+  grid-area: footer;
+}
+
+.copyright-section {
+  grid-area: copyright;
+}
+.overlay {
+  position: relative;
+}
+.overlay-text {
+  position: absolute;
+  bottom: 7%;
+  left: 7%;
+  text-align: start;
+}
+
 /* Navigation styles */
 nav {
   background-color: #fff1b5;
@@ -40,6 +90,7 @@ nav ul {
 nav ul li {
   margin: 0 1.5rem;
 }
+
 nav ul li a {
   color: #432f2e;
   text-decoration: none;
@@ -47,6 +98,35 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: #80a6cb;
+}
+
+/* align navigation items to the right */
+.navigation-menu li:nth-child(2) {
+  margin-left: auto;
+}
+
+/* interactive button styles */
+button {
+  background-color: #ffffff;
+  color: #432f2e;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+button:hover {
+  background-color: #fff1b5;
+}
+
+/* About section styles */
+.about-section {
+  background-color: #432f2e;
+  text-align: center;
+  color: #ffffff;
+  padding: 15rem 1rem;
 }
 
 /* Main content styles */
@@ -61,7 +141,7 @@ img {
 /* Heading styles */
 h1,
 h2 {
-  color: #432f2e;
+  color: #ffffff;
   font-size: 2rem;
 }
 h3 {
@@ -71,7 +151,7 @@ h3 {
 
 /* Subheader styles */
 subheader {
-  color: #432f2e;
+  color: #ffffff;
   font-size: 1.5rem;
   font-family: "Homemade Apple", cursive;
   font-weight: 400;
@@ -80,7 +160,7 @@ subheader {
 
 /* Paragraph styles */
 p1 {
-  color: #432f2e;
+  color: #ffffff;
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -103,8 +183,10 @@ p1 {
 footer {
   background-color: #fff1b5;
   color: #432f2e;
-  text-align: center;
-  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+  padding: 1rem 2rem;
 }
 
 .footer-links {
@@ -128,5 +210,7 @@ h6 {
   color: #432f2e;
   font-size: 1.25rem;
   font-family: Helvetica, sans-serif;
-  font-style: 800;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+  margin-top: 3rem;
 }

@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Elevé Activewear</title>
+
+    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="CSS/main.css" />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,12 +19,12 @@
 
   <body>
     <header>
-      <nav>
+      <nav class="navigation-bar">
         <a href="index.html" class="logo">
           <img src="Images/elevé-logo.svg" alt="logo" />
         </a>
 
-        <ul>
+        <ul class="navigation-menu">
           <li><a href="menu.html">MENU</a></li>
           <li><a href="search.html">SEARCH</a></li>
           <li><a href="shopping-bag.html">SHOPPING BAG</a></li>
@@ -30,98 +34,119 @@
     </header>
 
     <main>
-      <img
-        src="Images/background-main-page.jpg"
-        alt="main-background"
-        class="main-image"
-      />
-      <h1>Strong in every move.</h1>
-      <button>SHOP SELECTION</button>
-      <h2>Soft. Strong. In Motion.</h2>
-      <subheader> For everybody that loves to move.</subheader>
-      <p1>
-        Flexible, supportive pieces that adapt to you — empowering women to move
-        freely, embrace their strength, and define movement on their own terms.
-        Designed to flow with every twist, lift, and stretch, our activewear
-        gives you the freedom to perform, explore, and feel confident in every
-        move.
-      </p1>
+      <!-- Landing Page -->
+      <section class="main-image-section">
+        <img
+          src="Images/background-main-page.jpg"
+          alt="main-background"
+          class="main-image"
+        />
+        <div class="overlay-text">
+          <h1>Strong in every move.</h1>
+          <button>SHOP SELECTION</button>
+        </div>
+      </section>
 
-      <h3>Explore the essentials</h3>
-      <ul class="category-list">
-        <li class="category-item">
-          <a href="#" class="category-link">
-            <img src="Images/new-in.jpg" alt="new-in" class="category-image" />
-            <span class="category-title">NEW IN</span>
-          </a>
-        </li>
+      <section class="about-section">
+        <h2>Soft. Strong. In Motion.</h2>
+        <subheader> For everybody that loves to move.</subheader>
+        <p1>
+          Flexible, supportive pieces that adapt to you — empowering women to
+          move freely, embrace their strength, and define movement on their own
+          terms. Designed to flow with every twist, lift, and stretch, our
+          activewear gives you the freedom to perform, explore, and feel
+          confident in every move.
+        </p1>
+      </section>
 
-        <li class="category-item">
-          <a href="#" class="category-link">
-            <img src="Images/tops.jpeg" alt="tops" class="category-image" />
-            <span class="category-title">TOPS</span>
-          </a>
-        </li>
+      <!-- Product Categories -->
+      <section class="product-essentials">
+        <h3>Explore the essentials</h3>
+        <ul class="category-list">
+          <li class="category-item">
+            <a href="#" class="category-link">
+              <img
+                src="Images/new-in.jpg"
+                alt="new-in"
+                class="category-image"
+              />
+              <span class="category-title">NEW IN</span>
+            </a>
+          </li>
 
-        <li class="category-item">
-          <a href="#" class="category-link">
-            <img
-              src="Images/bottoms.jpeg"
-              alt="bottoms"
-              class="category-image"
-            />
-            <span class="category-title">BOTTOMS</span>
-          </a>
-        </li>
+          <li class="category-item">
+            <a href="#" class="category-link">
+              <img src="Images/tops.jpeg" alt="tops" class="category-image" />
+              <span class="category-title">TOPS</span>
+            </a>
+          </li>
 
-        <li class="category-item">
-          <a href="#" class="category-link">
-            <img
-              src="Images/pilates-girls.jpg"
-              alt="sets"
-              class="category-image"
-            />
-            <span class="category-title">SETS</span>
-          </a>
-        </li>
+          <li class="category-item">
+            <a href="#" class="category-link">
+              <img
+                src="Images/bottoms.jpeg"
+                alt="bottoms"
+                class="category-image"
+              />
+              <span class="category-title">BOTTOMS</span>
+            </a>
+          </li>
 
-        <li class="category-item">
-          <a href="#" class="category-link">
-            <img
-              src="Images/equipment.jpg"
-              alt="equipment"
-              class="category-image"
-            />
-            <span class="category-title">EQUIPMENT</span>
-          </a>
-        </li>
-      </ul>
+          <li class="category-item">
+            <a href="#" class="category-link">
+              <img
+                src="Images/pilates-girls.jpg"
+                alt="sets"
+                class="category-image"
+              />
+              <span class="category-title">SETS</span>
+            </a>
+          </li>
+
+          <li class="category-item">
+            <a href="#" class="category-link">
+              <img
+                src="Images/equipment.jpg"
+                alt="equipment"
+                class="category-image"
+              />
+              <span class="category-title">EQUIPMENT</span>
+            </a>
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer>
-      <h4>ABOUT US</h4>
-      <ul class="footer-links">
-        <li><a href="#">Our Story</a></li>
-        <li><a href="#">Sustainability</a></li>
-        <li><a href="#">Careers</a></li>
-      </ul>
+      <!-- Footer Menu -->
+      <section class="footer-menu">
+        <h4>ABOUT US</h4>
+        <ul class="footer-links">
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
 
-      <h5>CUSTOMER CARE</h5>
-      <ul class="footer-links">
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Shipping & Returns</a></li>
-        <li><a href="#">Size Guide</a></li>
-        <li><a href="#">FAQs</a></li>
-      </ul>
+        <h5>CUSTOMER CARE</h5>
+        <ul class="footer-links">
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Shipping & Returns</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
 
-      <h6>LEGAL</h6>
-      <ul class="footer-links">
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Service</a></li>
-        <li><a href="#">Cookie Policy</a></li>
-      </ul>
+        <h6>LEGAL</h6>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </section>
 
-      <small>&copy; Copyright 2024 Elevé Activewear</small>
+      <!-- Copyrights -->
+      <section class="copyright-section">
+        <p>&copy; 2024 Elevé Activewear</p>
+      </section>
     </footer>
   </body>
 </html>
