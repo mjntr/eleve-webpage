@@ -6,38 +6,31 @@ body {
     sans-serif;
   padding: 0;
   margin: 0;
-  background-color: #ffff;
+  background-color: #ffffff;
 }
 
 /* heading styles */
 h1,
 h2 {
-  color: #ffffff;
+  color: #f7eec5;
   font-size: 2rem;
 }
 h3 {
-  color: #432f2e;
+  color: #ffffff;
   font-size: 1.5rem;
 }
 /* subheader styles */
 subheader {
-  color: #ffffff;
+  color: #0258a1;
   font-size: 1.5rem;
-  font-family: "Homemade Apple", cursive;
+  font-family: "climate crisis";
   font-weight: 400;
   font-style: normal;
 }
 
-/* paragraph styles */
-p1 {
-  color: #ffffff;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
 /* HEADER SECTION */
 header {
-  background-color: #fff1b5;
+  background-color: #ffffff;
   padding: 0;
   margin: 0;
   position: sticky;
@@ -57,7 +50,7 @@ header {
 
 /* navigation styles */
 nav {
-  background-color: #fff1b5;
+  background-color: #ffffff;
   padding-top: 2rem;
 }
 nav ul {
@@ -71,7 +64,7 @@ nav ul li {
   margin: 0 2rem;
 }
 nav ul li a {
-  color: #432f2e;
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
 }
@@ -97,7 +90,7 @@ nav ul li a {
   width: 100%;
   height: 70vh;
   object-fit: cover;
-  object-position: 0vmin 85%;
+  object-position: center;
 }
 
 .overlay {
@@ -113,7 +106,7 @@ nav ul li a {
 /* button styles */
 button {
   background-color: #ffffff;
-  color: #432f2e;
+  color: #0258a1;
   padding: 1rem 1.5rem;
   border: none;
   cursor: pointer;
@@ -122,12 +115,12 @@ button {
   text-align: center;
 }
 button:hover {
-  background-color: #fff1b5;
+  background-color: #80a6cb;
 }
 
 /* ABOUT SECTION */
 .about-section {
-  background-color: #432f2e;
+  background-color: #e19768;
   text-align: center;
   color: #ffffff;
   padding: 15rem 1rem;
@@ -160,7 +153,7 @@ button:hover {
 /* category item subheads */
 .category-item a {
   text-decoration: none;
-  color: #432f2e;
+  color: #0258a1;
   font-weight: bold;
 }
 .category-item a:hover {
@@ -170,8 +163,8 @@ button:hover {
 
 /* FOOTER SECTION */
 footer {
-  background-color: #fff1b5;
-  color: #432f2e;
+  background-color: #0258a1;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   padding: 5%;
@@ -182,7 +175,7 @@ footer {
 h4,
 h5,
 h6 {
-  color: #432f2e;
+  color: #ffff;
   font-size: 1.25rem;
   font-family: Helvetica, sans-serif;
   font-weight: 800;
@@ -204,11 +197,11 @@ h6 {
   margin: 0.3rem 0;
 }
 .footer-links a {
-  color: #432f2e;
+  color: #ffffff;
   text-decoration: none;
 }
 .footer-links a:hover {
-  color: #80a6cb;
+  color: #0258a1;
 }
 
 /* copyright section */
@@ -218,4 +211,5 @@ h6 {
   align-items: center;
   margin-top: 3vh;
   margin-bottom: -3vh;
+  color: #ffffff;
 }
