@@ -10,79 +10,129 @@
     <link rel="stylesheet" href="CSS/pages/home.css" />
     <link rel="stylesheet" href="CSS/pages/product.css" />
     <link rel="stylesheet" href="CSS/pages/shopping-cart.css" />
-    <link rel="stylesheet" href="CSS/responsive design/desktop.css" />
     <link rel="stylesheet" href="CSS/responsive design/tablet.css" />
-    <link rel="stylesheet" href="CSS/responsive design/mobile.css" />
+    <link rel="stylesheet" href="CSS/responsive design/desktop.css" />
+
+    <!-- JavaSript -->
+    <script src="JavaScript/main.js" defer></script>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Climate+Crisis:YEAR@1979&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Climate+Crisis:YEAR@1979&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header>
       <nav class="navigation-bar">
-        <!-- left: menu icon -->
+        <!-- left: burger menu icon -->
         <ul class="nav-left">
           <li>
-            <a href="menu.html"
-              ><img
-                src="icons /burger-menu.svg"
-                alt="menu-icon"
-            /></a>
+            <a href="javascript:void(0)" onclick="openNav()">
+              <img src="icons /burger-menu.svg" alt="menu-icon" />
+            </a>
           </li>
         </ul>
 
         <!-- center: logo -->
         <a href="index.html" class="logo">
-          <img src="Images/elevé-logo.svg" alt="logo" />
+          <img src="Images/maré-logotype.svg" alt="logo" />
         </a>
 
-        <!-- right: nav icons -->
-         <ul class="nav-right">
+        <!-- right: shopping cart & search function -->
+        <ul class="nav-right">
           <li>
             <a href="search.html"
-              ><img src="icons /search-lense.svg"search-icon"
+              ><img src="icons /search-lense.svg" alt="search-icon"
             /></a>
           </li>
           <li>
             <a href="shopping-bag.html"
-              ><img src="icons /shopping-cart.svg" alt="shopping-cart-icon"
-            /></a>
-          </li>
-          <li>
-            <a href="account.html"
-              ><img src="icons /user-account.svg" alt="account-icon"
+              ><img
+                src="icons /shopping-cart.svg"
+                alt="shopping-cart-icon"
+                class="shopping-cart-icon"
             /></a>
           </li>
         </ul>
       </nav>
+
+      <!-- MENU OVERLAY https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
+      <div class="menu-dim-layer"></div>
+      <div id="menuOverlay" class="menu-overlay">
+        <!-- Close Button -->
+        <a href="javascript:void(0)" class="close-nav" onclick="closeNav()">
+          <img src="icons /x-icon.svg" alt="close menu" class="close-icon" />
+        </a>
+
+        <!-- Overlay Content -->
+        <div class="menu-overlay-content">
+          <a href="#" class="overlay-menu">NEW ARRIVALS</a>
+
+          <a href="#" class="overlay-menu"
+            >SHOP
+            <img
+              src="icons /chevron-down.svg"
+              alt="chevron-down"
+              class="chevron-toggle"
+            />
+          </a>
+          <div class="submenu">
+            <a href="#">Bikini Tops</a>
+            <a href="#">Bikini Bottoms</a>
+            <a href="#">Onepieces</a>
+          </div>
+          <a href="#" class="overlay-menu"
+            >COLLECTIONS
+            <img
+              src="icons /chevron-down.svg"
+              alt="chevron-down"
+              class="chevron-toggle"
+            />
+          </a>
+          <div class="submenu">
+            <a href="#">Summer 2026</a>
+            <a href="#">Beach Essetials</a>
+            <a href="#">Coastal Classics</a>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
-      <!-- Landing Page -->
+      <!-- Hero Section -->
       <section class="hero-container">
-        <img src="Images/beach-picnic.jpg" alt="main-background" class="main-image" />
+        <img
+          src="Images/beach-picnic.png"
+          alt="main-background"
+          class="main-image"
+        />
         <div class="hero-overlay">
-          <h1>Coastal state of mind.</h1>
+          <h1>
+            sun, waves & a splash <br />
+            of colour.
+          </h1>
           <button>SHOP COLLECTION</button>
         </div>
       </section>
 
+      <!-- About Section -->
       <section class="about-section">
         <div class="about-container">
-        <div class="about-image">
-          <img src="Images/girls-in-bikinis.jpg" alt="about-image">
-        </div>
-        <div class="about-text">
-
-        <h2>Our Philosophy</h2>
-        <p1>
-        Timeless swimwear inspired by the Mediterranean sun. 
-        Soft silhouettes, effortless shapes, and warm tones designed to make every day feel golden.
-        </p1>
-        </div>
+          <div class="about-image">
+            <img src="Images/about-section.png" alt="about-image" />
+          </div>
+          <div class="about-text">
+            <h2>Our Philosophy</h2>
+            <p1>
+              Timeless swimwear inspired by the Mediterranean sun. Soft
+              silhouettes, effortless shapes, and warm tones designed to make
+              every day feel golden.
+            </p1>
+          </div>
         </div>
       </section>
 
@@ -113,7 +163,11 @@
 
           <li class="category-item">
             <a href="#" class="category-link">
-              <img src="Images/bikini-top.jpg" alt="bikini-tops" class="category-image" />
+              <img
+                src="Images/bikini-top.jpg"
+                alt="bikini-tops"
+                class="category-image"
+              />
               <span class="category-title">BIKINI TOPS</span>
             </a>
           </li>
