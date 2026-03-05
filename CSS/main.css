@@ -18,6 +18,16 @@ h2 {
   font-size: 3rem;
 }
 
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  font-size: 5rem;
+  color: #ffffff;
+}
+
 h4,
 h5,
 h6 {
