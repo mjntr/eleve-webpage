@@ -72,13 +72,10 @@
 /* PRODUCT ESSENTIALS SECTION */
 .product-essentials {
   padding: 0 2rem;
+  width: 100vw;
   height: 834px;
 }
-.product-essentials h3 {
-  text-align: center;
-  margin-top: -3.75rem;
-  z-index: 10;
-}
+
 .category-list {
   display: flex;
   flex-direction: row;
@@ -91,8 +88,12 @@
 
 .category-item img {
   width: auto;
-  height: 28rem;
-  margin: 0.5rem;
+  height: 30rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 7rem;
+  align-items: center;
+  align-content: center;
 }
 
 /* category items */
