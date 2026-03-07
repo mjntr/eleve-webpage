@@ -1,10 +1,10 @@
 /* HERO SECTION */
-.hero-container {
+.bestseller-page .hero-container {
   position: relative;
   width: 100%;
   min-height: auto;
 }
-.hero-overlay {
+.bestseller-page .hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -12,10 +12,11 @@
   height: 100%;
 
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
 }
-.hero-overlay h3 {
+
+.bestseller-page .hero-overlay h3 {
   margin: 2rem;
 }
 /* PRODUCT DISPLAY SECTION */

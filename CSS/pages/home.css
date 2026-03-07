@@ -13,7 +13,7 @@
 }
 
 /* Hero text overlay */
-.hero-overlay {
+.landing-page .hero-overlay {
   position: absolute;
   bottom: 3rem;
   left: 3rem;
@@ -21,7 +21,7 @@
   flex-direction: column;
   align-items: flex-start;
 }
-.hero-overlay h1 {
+.landing-page .hero-overlay h1 {
   font-size: 3.7rem;
   margin-top: 0;
   margin-bottom: 2rem;
