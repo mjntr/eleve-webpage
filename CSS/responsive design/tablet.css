@@ -30,6 +30,16 @@
   }
 }
 /* Menu */
+/* LANDING PAGE */
+@media (min-width: 1200px) {
+  .category-item img {
+    height: 45vw;
+    margin-top: 9vw;
+  }
+  .category-item a {
+    font-size: 2rem;
+  }
+}
 
 /* BESTSELLER PAGE */
 @media (min-width: 1200px) {

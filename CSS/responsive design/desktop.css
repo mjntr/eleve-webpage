@@ -41,7 +41,26 @@
     height: 2.5vw;
   }
 }
+/* LANDING PAGE */
+@media (min-width: 1700px) {
+  .category-item img {
+    height: 40vw;
+    margin-top: 12vw;
+  }
+  .category-item a {
+    font-size: 2.3rem;
+  }
+}
 
+@media (min-width: 2200px) {
+  .category-item img {
+    height: 35vw;
+    margin-top: 15vw;
+  }
+  .category-item a {
+    font-size: 2.6rem;
+  }
+}
 /* BESTSELLER PAGE */
 @media (min-width: 1700px) {
   .bestseller-page .hero-container img {
