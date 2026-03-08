@@ -2,7 +2,7 @@
 .hero-container {
   position: relative;
   width: 100vw;
-  height: auto;
+  height 70vw;
 }
 
 .hero-container img {
@@ -15,17 +15,16 @@
 /* Hero text overlay */
 .landing-page .hero-overlay {
   position: absolute;
-  bottom: 3rem;
-  left: 3rem;
+  bottom: 5vw;
+  left: 5vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 .landing-page .hero-overlay h1 {
-  font-size: 3.7rem;
   margin-top: 0;
-  margin-bottom: 2rem;
-  line-height: 5rem;
+  margin-bottom: 3.7vw;
+  line-height: 6.5vw;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -38,13 +37,13 @@
 .about-container {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 4vw;
   flex-wrap: nowrap;
-  height: 843px;
+  height: 70vw;
 }
 
 .about-image img {
-  width: 100%;
+  width: 50vw;
   height: 100%;
   display: block;
   object-fit: cover;
@@ -53,19 +52,16 @@
 .about-text {
   display: flex;
   flex-direction: column;
-  width: 69%;
   margin: 2rem 4rem 2rem 2rem;
 }
 
 .about-text h2 {
   margin-top: 0;
   margin-bottom: 1rem;
-  font-size: 3rem;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .about-text p {
-  font-size: 2rem;
   line-height: 1.4rem;
 }
 
@@ -73,7 +69,7 @@
 .product-essentials {
   padding: 0 2rem;
   width: 100vw;
-  height: 834px;
+  height: 70vw;
 }
 
 .category-list {
@@ -88,10 +84,10 @@
 
 .category-item img {
   width: auto;
-  height: 30rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  margin-top: 7rem;
+  height: 50vw;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  margin-top: 8vw;
   align-items: center;
   align-content: center;
 }
@@ -108,7 +104,7 @@
   text-decoration: none;
   color: #0258a1;
   font-weight: 500;
-  font-size: 1.7rem;
+  font-size: 5vw;
 
   display: flex;
   flex-direction: column;

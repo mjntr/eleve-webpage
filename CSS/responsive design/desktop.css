@@ -48,6 +48,21 @@
     object-position: center;
     height: 55vw;
   }
+
+  .bestseller-page .hero-overlay h3 {
+    font-size: 12vw;
+  }
+}
+
+@media (min-width: 2200px) {
+  .bestseller-page .hero-container img {
+    object-position: center;
+    height: 47.5vw;
+  }
+
+  .bestseller-page .hero-overlay h3 {
+    font-size: 11vw;
+  }
 }
 /* product pictures */
 @media (min-width: 1700px) {

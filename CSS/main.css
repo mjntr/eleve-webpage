@@ -5,7 +5,7 @@ body {
   font-style: normal;
   padding: 0;
   margin: 0;
-  font-size: 1.7rem;
+  font-size: 5vw;
 }
 
 /* headings */
@@ -15,7 +15,7 @@ h2 {
   font-weight: 400;
   font-style: normal;
   color: #f7eec5;
-  font-size: 3rem;
+  font-size: 9vw;
 }
 
 h3 {
@@ -24,7 +24,7 @@ h3 {
   font-style: normal;
   padding: 0;
   margin: 0;
-  font-size: 18vw;
+  font-size: 14vw;
   color: #ffffff;
 }
 
@@ -44,8 +44,8 @@ h6 {
 }
 /* BUTTON STYLES */
 button {
-  padding: 1.8rem 2.5rem;
-  font-size: 2rem;
+  padding: 2.8vw 3.5vw;
+  font-size: 5vw;
   background-color: #ffffff;
   color: #0258a1;
   font-weight: 500;

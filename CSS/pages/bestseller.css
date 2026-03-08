@@ -2,7 +2,6 @@
 .bestseller-page .hero-container {
   position: relative;
   width: 100%;
-  min-height: auto;
 }
 .bestseller-page .hero-overlay {
   position: absolute;
@@ -17,7 +16,7 @@
 }
 
 .bestseller-page .hero-overlay h3 {
-  margin: 2rem;
+  margin-bottom: 5vw;
 }
 /* PRODUCT DISPLAY SECTION */
 .product-grid {
@@ -50,9 +49,6 @@
 /* Hover Images */
 .product-image img.back {
   position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
 }
 /* Icon Product Image */
 .add-to-basket-icon {

@@ -32,6 +32,16 @@
 /* Menu */
 
 /* BESTSELLER PAGE */
+@media (min-width: 1200px) {
+  .bestseller-page .hero-container img {
+    object-position: center;
+    height: 62.5vw;
+  }
+
+  .bestseller-page .hero-overlay h3 {
+    font-size: 13vw;
+  }
+}
 /* product pictures */
 @media (min-width: 700px) {
   .product-grid {
