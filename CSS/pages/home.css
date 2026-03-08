@@ -24,7 +24,7 @@
 .landing-page .hero-overlay h1 {
   margin-top: 0;
   margin-bottom: 3.7vw;
-  line-height: 6.5svw;
+  line-height: 6.5vw;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -47,6 +47,7 @@
   height: 100%;
   display: block;
   object-fit: cover;
+  object-position: center;
 }
 
 .about-text {

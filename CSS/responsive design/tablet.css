@@ -1,4 +1,12 @@
 /* MAIN */
+@media (min-width: 1200px) {
+  button {
+    padding: 2.5rem 3rem;
+    font-size: 2.2rem;
+    max-width: 24rem;
+    min-width: 22rem;
+  }
+}
 
 /* Navigation Bar */
 @media (min-width: 700px) {
@@ -30,11 +38,52 @@
   }
 }
 /* Menu */
+
 /* LANDING PAGE */
+/* hero section */
+@media (min-width: 700px) {
+  .hero-container img {
+    object-position: center 2px;
+    height: 70vw;
+  }
+}
 @media (min-width: 1200px) {
+  .hero-container img {
+    object-position: center 4px;
+    height: 62.5vw;
+  }
+  .landing-page .hero-overlay h1 {
+    font-size: 8vw;
+    line-height: 7.5vw;
+  }
+  .landing-page .hero-overlay {
+    bottom: 4vw;
+    left: 4vw;
+  }
+}
+/* About Section */
+@media (min-width: 1200px) {
+  .about-container {
+    height: 62.5vw;
+  }
+  .about-image img {
+    object-position: center 90%;
+  }
+  .about-text h2 {
+    font-size: 8vw;
+  }
+  .about-text p {
+    font-size: 3.5vw;
+  }
+}
+/* Category Section */
+@media (min-width: 1200px) {
+  .product-essentials {
+    height: 62.5vw;
+  }
   .category-item img {
     height: 45vw;
-    margin-top: 9vw;
+    margin-top: 7vw;
   }
   .category-item a {
     font-size: 2rem;
@@ -44,7 +93,7 @@
 /* BESTSELLER PAGE */
 @media (min-width: 1200px) {
   .bestseller-page .hero-container img {
-    object-position: center;
+    object-position: center 7px;
     height: 62.5vw;
   }
 

@@ -41,11 +41,75 @@
     height: 2.5vw;
   }
 }
+
 /* LANDING PAGE */
+/* hero section */
 @media (min-width: 1700px) {
+  .hero-container img {
+    object-position: center 6px;
+    height: 55vw;
+  }
+  .landing-page .hero-overlay h1 {
+    font-size: 7vw;
+    line-height: 6.5vw;
+  }
+  .landing-page .hero-overlay {
+    bottom: 3vw;
+    left: 3vw;
+  }
+}
+
+@media (min-width: 2200px) {
+  .hero-container img {
+    object-position: center 8px;
+    height: 47.5vw;
+  }
+  .landing-page .hero-overlay h1 {
+    font-size: 6vw;
+    line-height: 5.5vw;
+  }
+  .landing-page .hero-overlay {
+    bottom: 2.5vw;
+    left: 2vw;
+  }
+}
+/* About Section */
+@media (min-width: 1700px) {
+  .about-container {
+    height: 55vw;
+  }
+  .about-image img {
+    object-position: center 90%;
+  }
+  .about-text h2 {
+    font-size: 7vw;
+  }
+  .about-text p {
+    font-size: 2vw;
+  }
+}
+@media (min-width: 2200px) {
+  .about-container {
+    height: 47.5vw;
+  }
+  .about-image img {
+    object-position: center 90%;
+  }
+  .about-text h2 {
+    font-size: 6vw;
+  }
+  .about-text p {
+    font-size: 0.5vw;
+  }
+}
+/* Category Section */
+@media (min-width: 1700px) {
+  .product-essentials {
+    height: 55vw;
+  }
   .category-item img {
     height: 40vw;
-    margin-top: 12vw;
+    margin-top: 6vw;
   }
   .category-item a {
     font-size: 2.3rem;
@@ -53,9 +117,12 @@
 }
 
 @media (min-width: 2200px) {
+  .product-essentials {
+    height: 47.5vw;
+  }
   .category-item img {
     height: 35vw;
-    margin-top: 15vw;
+    margin-top: 5vw;
   }
   .category-item a {
     font-size: 2.6rem;

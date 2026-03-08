@@ -45,8 +45,11 @@ h6 {
 }
 /* BUTTON STYLES */
 button {
-  padding: 2.8vw 3.5vw;
-  font-size: 5vw;
+  display: inline-block;
+  max-width: 22rem;
+  min-width: 20rem;
+  padding: 2rem 2.5rem;
+  font-size: 2rem;
   background-color: #ffffff;
   color: #0258a1;
   font-weight: 500;
