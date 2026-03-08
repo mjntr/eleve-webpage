@@ -24,7 +24,7 @@ h3 {
   font-style: normal;
   padding: 0;
   margin: 0;
-  font-size: 5rem;
+  font-size: 18vw;
   color: #ffffff;
 }
 
@@ -71,10 +71,10 @@ header {
 /* NAVIGATION MENU */
 .navigation-bar {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  padding: 3rem 3rem;
 }
 /* menu overlay */
 .menu-overlay {
@@ -90,7 +90,7 @@ header {
   padding-top: 3rem;
 }
 .menu-overlay.open {
-  width: 35vw;
+  width: 40%;
   height: 100%;
 }
 /* dim layer when menu opened */
@@ -115,7 +115,7 @@ header {
   justify-content: left;
   gap: 0.5rem;
   color: #0258a1;
-  font-size: 2rem;
+  font-size: 5.5vw;
   text-decoration: none;
   text-align: none;
   margin-left: 4rem;
@@ -134,6 +134,9 @@ header {
 .chevron-toggle {
   transition: transform 0.3s ease;
   transform: rotate(0deg);
+  width: 3vw;
+  height: 3vw;
+  margin-top: 0.7vw;
 }
 
 .chevron-toggle.chevron-up {
@@ -141,7 +144,7 @@ header {
 }
 
 .submenu a {
-  font-size: 1.7rem;
+  font-size: 4.75vw;
 }
 .close-nav {
   position: absolute;
@@ -150,17 +153,18 @@ header {
 }
 
 .close-icon {
-  width: 2rem;
-  height: 2rem;
+  width: 2vw;
+  height: 2vw;
 }
 
 /* LOGO */
 .logo {
-  display: flex;
-  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .logo img {
-  height: 3rem;
+  height: 4vw;
 }
 
 .nav-left,
@@ -172,20 +176,16 @@ header {
   padding: 0;
 }
 
-.nav-right {
-  gap: 3rem;
-}
-
 /* icon size */
 nav ul li a img {
-  height: 3rem;
-  width: 3rem;
+  height: 4vw;
+  width: 4vw;
   display: block;
 }
 
 .shopping-cart-icon {
-  height: 3.7rem;
-  width: 3.7rem;
+  height: 4.7vw;
+  width: 4.7vw;
 }
 
 /* FOOTER SECTION */
