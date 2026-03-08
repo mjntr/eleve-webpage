@@ -35,8 +35,8 @@ h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.7rem;
-  margin-bottom: 0.75rem;
+  font-size: 3vh;
+  margin-bottom: 0.5rem;
 }
 
 h5,
@@ -200,14 +200,28 @@ footer {
   flex-direction: column;
   padding: 5%;
   text-align: justify;
-  font-size: 1.4rem;
+  font-size: 3vh;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2.5vh;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
 }
 
 /* footer links */
 .footer-links {
   list-style-type: none;
   padding: 0;
-  margin: 0.5rem 0;
+  margin: 0;
   font-size: 1.5rem;
 }
 .footer-links li {
@@ -227,7 +241,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3vh;
   margin-bottom: -3vh;
   font-size: 1.2rem;
   color: #ffffff;
