@@ -21,7 +21,7 @@
 /* PRODUCT DISPLAY SECTION */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 5rem;
   padding: 5rem;
 }
@@ -47,16 +47,16 @@
 }
 
 /* Hover Images */
-.product-image img.back {
+.product-image img.front {
   position: absolute;
 }
 /* Icon Product Image */
 .add-to-basket-icon {
   position: absolute;
-  top: 2rem;
-  right: 2rem;
-  width: 3.2rem;
-  height: 3.2rem;
+  top: 3.5vw;
+  right: 3.5vw;
+  width: 5.5vw;
+  height: 5.5vw;
 }
 /* Icon Product Image Hover */
 .add-to-basket-icon img.back {
@@ -85,15 +85,10 @@
 
 .product-name {
   color: #0258a1;
-  font-size: clamp(
-    2.5rem,
-    2.5vw,
-    3rem
-  ); /* adjusts to image size (min,preferred,max)*/
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
 }
 
 .product-price {
   color: #0258a1;
-  font-size: clamp(2rem, 2vw, 2.5rem);
+  margin-top: 0.7rem;
 }

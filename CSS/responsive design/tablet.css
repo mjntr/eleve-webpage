@@ -1,40 +1,76 @@
 /* MAIN */
-@media (min-width: 1200px) {
+/* typography */
+@media (min-width: 700px) {
+  h4,
+  h5,
+  h6 {
+    font-size: 6vw;
+  }
+}
+@media (min-width: 1000px) {
+  h4,
+  h5,
+  h6 {
+    font-size: 5vw;
+  }
+}
+
+/* button */
+@media (min-width: 700px) {
   button {
-    padding: 2.5rem 3rem;
-    font-size: 2.2rem;
-    max-width: 24rem;
-    min-width: 22rem;
+    padding: 3.5vw 4vw;
+    font-size: 5.5vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  button {
+    padding: 3.5vw 4vw;
+    font-size: 5.5vw;
   }
 }
 
 /* Navigation Bar */
 @media (min-width: 700px) {
   .navigation-bar {
-    padding: 5vw 3.5vw 5vw 3.5vw;
-  }
-  .nav-right {
-    gap: 3vw;
-  }
-}
-@media (min-width: 1200px) {
-  .navigation-bar {
-    padding: 4vw 3vw 4vw 3vw;
+    padding: 3.5vw 4.5vw;
+    margin-top: 1vw;
   }
   .nav-right {
     gap: 3vw;
   }
   nav ul li a img {
-    height: 3.5vw;
-    width: 3.5vw;
+    height: 4.5vw;
+    width: 4.5vw;
   }
 
   .shopping-cart-icon {
-    height: 4.2vw;
-    width: 4.2vw;
+    height: 5.2vw;
+    width: 5.2vw;
   }
   .logo img {
-    height: 3.5vw;
+    height: 4.5vw;
+  }
+}
+@media (min-width: 1000px) {
+  .navigation-bar {
+    padding: 3vw 4vw;
+    margin-top: 1vw;
+  }
+  .nav-right {
+    gap: 3vw;
+  }
+  nav ul li a img {
+    height: 4vw;
+    width: 4vw;
+  }
+
+  .shopping-cart-icon {
+    height: 4.7vw;
+    width: 4.7vw;
+  }
+  .logo img {
+    height: 4vw;
   }
 }
 /* Menu */
@@ -46,23 +82,46 @@
     object-position: center 2px;
     height: 70vw;
   }
+  .landing-page .hero-overlay h1 {
+    font-size: 8.5vw;
+    line-height: 7vw;
+  }
+  .landing-page .hero-overlay {
+    bottom: 5vw;
+    left: 5vw;
+  }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .hero-container img {
     object-position: center 4px;
     height: 62.5vw;
   }
   .landing-page .hero-overlay h1 {
     font-size: 8vw;
-    line-height: 7.5vw;
+    line-height: 6.5vw;
   }
   .landing-page .hero-overlay {
-    bottom: 4vw;
-    left: 4vw;
+    bottom: 5vw;
+    left: 5vw;
   }
 }
 /* About Section */
-@media (min-width: 1200px) {
+@media (min-width: 700px) {
+  .about-container {
+    height: 70vw;
+  }
+  .about-image img {
+    object-position: center;
+    width: 46vw;
+  }
+  .about-text h2 {
+    font-size: 7.2vw;
+  }
+  .about-text p {
+    font-size: 2vw;
+  }
+}
+@media (min-width: 1000px) {
   .about-container {
     height: 62.5vw;
   }
@@ -77,7 +136,19 @@
   }
 }
 /* Category Section */
-@media (min-width: 1200px) {
+@media (min-width: 700px) {
+  .product-essentials {
+    height: 70vw;
+  }
+  .category-item img {
+    height: 50vw;
+    margin-top: 8vw;
+  }
+  .category-item a {
+    font-size: 5.5vw;
+  }
+}
+@media (min-width: 1000px) {
   .product-essentials {
     height: 62.5vw;
   }
@@ -89,9 +160,47 @@
     font-size: 2rem;
   }
 }
+/* Footer */
+@media (min-width: 700px) {
+  .footer {
+    height: 35vw;
+  }
+  .footer-links {
+    font-size: 2.5vw;
+  }
+  .footer-column {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+  .copyright-section {
+    margin-bottom: -3.5vw;
+    font-size: 2.5vw;
+  }
+}
+@media (min-width: 1000px) {
+  .footer {
+    height: 31.25vw;
+  }
+  .footer-links {
+    font-size: 4vw;
+  }
+  .footer-column {
+    margin-left: 6vw;
+    margin-right: 6vw;
+  }
+  .copyright-section {
+    margin-bottom: -4vw;
+    font-size: 3.5vw;
+  }
+}
 
 /* BESTSELLER PAGE */
-@media (min-width: 1200px) {
+@media (min-width: 700px) {
+  .bestseller-page .hero-overlay h3 {
+    font-size: 14vw;
+  }
+}
+@media (min-width: 1000px) {
   .bestseller-page .hero-container img {
     object-position: center 7px;
     height: 62.5vw;
@@ -106,10 +215,31 @@
   .product-grid {
     grid-template-columns: repeat(1, 1fr);
   }
+  .product-name {
+    font-size: 9vw;
+  }
+  .product-price {
+    font-size: 7vw;
+  }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .add-to-basket-icon {
+    position: absolute;
+    top: 2.5vw;
+    right: 2.5vw;
+    width: 4.5vw;
+    height: 4.5vw;
+  }
+
+  .product-name {
+    font-size: 5.5vw;
+  }
+
+  .product-price {
+    font-size: 4.5vw;
   }
 }

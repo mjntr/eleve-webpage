@@ -5,7 +5,7 @@ body {
   font-style: normal;
   padding: 0;
   margin: 0;
-  font-size: 5vw;
+  font-size: 5.5vw;
   overflow-x: hidden;
 }
 
@@ -33,23 +33,16 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
-  font-size: 3vh;
+  font-size: 5.2vw;
   margin-bottom: 0.5rem;
-}
-
-h5,
-h6 {
   margin-top: 2rem;
 }
+
 /* BUTTON STYLES */
 button {
   display: inline-block;
-  max-width: 22rem;
-  min-width: 20rem;
-  padding: 2rem 2.5rem;
-  font-size: 2rem;
   background-color: #ffffff;
   color: #0258a1;
   font-weight: 500;
@@ -122,7 +115,7 @@ header {
   font-size: 5.5vw;
   text-decoration: none;
   text-align: none;
-  margin-left: 4rem;
+  margin-left: 6vw;
   margin-top: 1.2rem;
   transition: color 0.2s ease-in-out;
 }
@@ -200,21 +193,18 @@ footer {
   flex-direction: column;
   padding: 5%;
   text-align: justify;
-  font-size: 3vh;
 }
 
 .footer-menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 2.5vh;
+  margin-bottom: 5.5vh;
 }
 
 .footer-column {
   display: flex;
   flex-direction: column;
-  margin-left: 3.5rem;
-  margin-right: 3.5rem;
 }
 
 /* footer links */
@@ -222,7 +212,7 @@ footer {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 4.5vw;
 }
 .footer-links li {
   margin: 0.3rem 0;
@@ -241,7 +231,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: -3vh;
-  font-size: 1.2rem;
+  margin-bottom: -3vw;
+  font-size: 3.7vw;
   color: #ffffff;
 }

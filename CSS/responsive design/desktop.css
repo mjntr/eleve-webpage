@@ -3,7 +3,7 @@
 /* Navigation Bar */
 @media (min-width: 1700px) {
   .navigation-bar {
-    padding: 3vw 2.5vw 3vw 2.5vw;
+    padding: 1.5vw;
   }
   .nav-right {
     gap: 2vw;
@@ -37,6 +37,7 @@
     height: 3.2vw;
     width: 3.2vw;
   }
+
   .logo img {
     height: 2.5vw;
   }
@@ -99,7 +100,7 @@
     font-size: 6vw;
   }
   .about-text p {
-    font-size: 0.5vw;
+    font-size: 1vw;
   }
 }
 /* Category Section */
