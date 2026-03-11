@@ -77,14 +77,17 @@
 /* Menu Overlay */
 @media (min-width: 1500px) {
   .menu-overlay {
-    padding-top: 3vw;
+    padding-top: 4.5vw;
   }
   .menu-overlay.open {
-    width: 30%;
+    width: 27%;
   }
   .menu-overlay-content a {
     font-size: 4vw;
     margin-left: 5vw;
+  }
+  .menu-overlay-content a:first-child {
+    margin-top: 0.25vw;
   }
 
   .submenu {
@@ -101,8 +104,8 @@
     font-size: 3.6vw;
   }
   .close-nav {
-    top: 2.5vw;
-    right: 2.5vw;
+    top: 1vw;
+    right: 2vw;
   }
 
   .close-icon {
@@ -112,12 +115,18 @@
 }
 
 @media (min-width: 2000px) {
+  .menu-overlay {
+    padding-top: 2.5vw;
+  }
   .menu-overlay.open {
     width: 22%;
   }
   .menu-overlay-content a {
     font-size: 3.2vw;
     margin-left: 4vw;
+  }
+  .menu-overlay-content a:first-child {
+    margin-top: 1.5vw;
   }
   .submenu {
     margin-left: 2vw;
@@ -138,7 +147,7 @@
   }
 
   .close-nav {
-    top: 2.2vw;
+    top: 0.4vw;
     right: 2.2vw;
   }
 
