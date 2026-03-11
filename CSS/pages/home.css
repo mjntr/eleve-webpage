@@ -43,7 +43,6 @@
 }
 
 .about-image img {
-  width: 50vw;
   height: 100%;
   display: block;
   object-fit: cover;

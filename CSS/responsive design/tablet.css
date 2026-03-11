@@ -19,14 +19,14 @@
 @media (min-width: 700px) {
   button {
     padding: 3.5vw 4vw;
-    font-size: 5.5vw;
+    font-size: 5.7vw;
   }
 }
 
 @media (min-width: 1000px) {
   button {
-    padding: 3.5vw 4vw;
-    font-size: 5.5vw;
+    padding: 3vw 3.5vw;
+    font-size: 5.2vw;
   }
 }
 
@@ -105,6 +105,7 @@
     left: 5vw;
   }
 }
+
 /* About Section */
 @media (min-width: 700px) {
   .about-container {
@@ -115,7 +116,7 @@
     width: 46vw;
   }
   .about-text h2 {
-    font-size: 7.2vw;
+    font-size: 8.5vw;
   }
   .about-text p {
     font-size: 2vw;
@@ -127,14 +128,16 @@
   }
   .about-image img {
     object-position: center 90%;
+    width: 50vw;
   }
   .about-text h2 {
     font-size: 8vw;
   }
   .about-text p {
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
 }
+
 /* Category Section */
 @media (min-width: 700px) {
   .product-essentials {
@@ -157,7 +160,7 @@
     margin-top: 7vw;
   }
   .category-item a {
-    font-size: 2rem;
+    font-size: 5vw;
   }
 }
 /* Footer */
