@@ -73,8 +73,76 @@
     height: 4vw;
   }
 }
-/* Menu */
+/* Menu Overlay */
+@media (min-width: 700px) {
+  .menu-overlay.open {
+    width: 40%;
+    height: 100%;
+  }
+  .menu-overlay-content a {
+    font-size: 6.5vw;
+    margin-left: 6vw;
+  }
+  .submenu {
+    margin-left: 2vw;
+  }
 
+  .chevron-toggle {
+    width: 3.5vw;
+    height: 3.5vw;
+    margin-top: 0.3vw;
+  }
+
+  .submenu a {
+    font-size: 5.5vw;
+  }
+  .close-nav {
+    top: 4vw;
+    right: 4vw;
+  }
+
+  .close-icon {
+    width: 3vw;
+    height: 3vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  .menu-overlay {
+    padding-top: 6vw;
+  }
+  .menu-overlay.open {
+    width: 33%;
+  }
+  .menu-overlay-content a {
+    font-size: 4.8vw;
+    margin-left: 6vw;
+  }
+  .submenu {
+    margin-left: 2vw;
+  }
+  .submenu a:first-child {
+    margin-top: 1.2vw;
+  }
+  .chevron-toggle {
+    width: 3vw;
+    height: 3vw;
+    margin-top: 0.25vw;
+  }
+
+  .submenu a {
+    font-size: 4.75vw;
+  }
+  .close-nav {
+    top: 3.5vw;
+    right: 3.5vw;
+  }
+
+  .close-icon {
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+}
 /* LANDING PAGE */
 /* hero section */
 @media (min-width: 700px) {

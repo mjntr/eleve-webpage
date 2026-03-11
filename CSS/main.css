@@ -84,12 +84,8 @@ header {
   transition: 0.4s; /* smooth slide */
   z-index: 1000; /* keeps overlay over content */
   overflow-x: hidden;
-  padding-top: 3rem;
 }
-.menu-overlay.open {
-  width: 40%;
-  height: 100%;
-}
+
 /* dim layer when menu opened */
 .menu-dim-layer {
   position: fixed;
@@ -116,7 +112,6 @@ header {
   text-decoration: none;
   text-align: none;
   margin-left: 6vw;
-  margin-top: 1.2rem;
   transition: color 0.2s ease-in-out;
 }
 .submenu {

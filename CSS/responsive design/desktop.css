@@ -54,8 +54,8 @@
 }
 @media (min-width: 2000px) {
   .navigation-bar {
-    padding: 1.5vw 2.5vw;
-    margin-top: 1vw;
+    padding: 2.5vw 2.5vw;
+    margin-top: 0;
   }
   .nav-right {
     gap: 2vw;
@@ -71,6 +71,80 @@
   }
   .logo img {
     height: 2.2vw;
+  }
+}
+
+/* Menu Overlay */
+@media (min-width: 1500px) {
+  .menu-overlay {
+    padding-top: 3vw;
+  }
+  .menu-overlay.open {
+    width: 30%;
+  }
+  .menu-overlay-content a {
+    font-size: 4vw;
+    margin-left: 5vw;
+  }
+
+  .submenu {
+    margin-left: 2vw;
+  }
+
+  .chevron-toggle {
+    width: 2.5vw;
+    height: 2.5vw;
+    margin-top: 0.2vw;
+  }
+
+  .submenu a {
+    font-size: 3.6vw;
+  }
+  .close-nav {
+    top: 2.5vw;
+    right: 2.5vw;
+  }
+
+  .close-icon {
+    width: 2vw;
+    height: 2vw;
+  }
+}
+
+@media (min-width: 2000px) {
+  .menu-overlay.open {
+    width: 22%;
+  }
+  .menu-overlay-content a {
+    font-size: 3.2vw;
+    margin-left: 4vw;
+  }
+  .submenu {
+    margin-left: 2vw;
+  }
+
+  .chevron-toggle {
+    width: 1.8vw;
+    height: 1.8vw;
+    margin-top: 0.2vw;
+  }
+
+  .submenu a {
+    font-size: 2.7vw;
+  }
+
+  .submenu a:first-child {
+    margin-top: 1vw;
+  }
+
+  .close-nav {
+    top: 2.2vw;
+    right: 2.2vw;
+  }
+
+  .close-icon {
+    width: 1.5vw;
+    height: 1.5vw;
   }
 }
 
