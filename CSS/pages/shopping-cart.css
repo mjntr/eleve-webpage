@@ -54,7 +54,6 @@
 
 /* Cart Summary Box */
 #cart-summary {
-  max-width: 30%;
   margin-left: auto;
   padding: 2vw; /* make responsive!! */
   border: 1px solid #e5e5e5;
@@ -64,13 +63,12 @@
 #cart-summary p {
   display: flex;
   justify-content: space-between;
-  font-size: 5.5vw; /* make responsive!! */
+  font-size: 3.5vw; /* make responsive!! */
   margin-bottom: 2vw; /* make responsive!! */
 }
 
 #cart-summary p:last-of-type {
   font-weight: 600;
-  /*font-size: ;*/
 }
 
 #checkout-button {
@@ -91,9 +89,10 @@
     margin: 3vw;
     font-size: 7vw;
   }
-  /* #cart-items th {
-    font-size: ;
-    padding: ; */
+  #cart-items th {
+    font-size: 5vw;
+    padding: 1vw;
+  }
 }
 @media (min-width: 1000px) {
   .shopping-cart {
@@ -103,9 +102,10 @@
     margin: 4vw;
     font-size: 8vw;
   }
-  /* #cart-items th {
-    font-size: ;
-    padding: ; */
+  #cart-items th {
+    font-size: 6vw;
+    padding: 1.5vw;
+  }
 }
 
 @media (min-width: 1500px) {
@@ -116,9 +116,10 @@
     margin: 3vw;
     font-size: 7vw;
   }
-  /* #cart-items th {
-    font-size: ;
-    padding: ; */
+  #cart-items th {
+    font-size: 5vw;
+    padding: 1vw;
+  }
 }
 @media (min-width: 2000px) {
   .shopping-cart {
@@ -128,7 +129,8 @@
     margin: 2vw;
     font-size: 6vw;
   }
-  /* #cart-items th {
-    font-size: ;
-    padding: ; */
+  #cart-items th {
+    font-size: 4vw;
+    padding: 1vw;
+  }
 }
