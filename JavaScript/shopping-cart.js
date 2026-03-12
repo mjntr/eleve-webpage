@@ -51,7 +51,7 @@ function updateCartSummary() {
         <span class="quantity">${item.quantity}</span>
         <button class="quantity-btn" data-id="${item.id}" data-action="plus">+</button>
         </td>
-        <td>€${(item.price * item.quantity).toFixed(2)}
+        <td>${(item.price * item.quantity).toFixed(2)}€
         <button class="remove-item" data-id="${item.id}"
         style="background:none; border:none;"> <img src="icons /trashcan-icon.svg" alt="remove" class="remove-icon">
         </button>
@@ -67,7 +67,7 @@ function updateCartSummary() {
   cartTableBody.innerHTML = itemsHtml;
 
   cartSummary.innerHTML = `
-  <p>Subtotal: €${subtotal.toFixed(2)}</p><p>Shipping: €${shipping.toFixed(2)}</p><p>Total: €${total.toFixed(2)}</p><button id="checkout-button">CHECKOUT</button>`;
+  <p>Subtotal: ${subtotal.toFixed(2)}€</p><p>Shipping: ${shipping.toFixed(2)}€</p><p>Total: ${total.toFixed(2)}€</p><button id="checkout-button">CHECKOUT</button>`;
 
   // Remove Product Button //
   cartTableBody.querySelectorAll(".remove-item").forEach((btn) => {
