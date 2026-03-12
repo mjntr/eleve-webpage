@@ -5,7 +5,6 @@ body {
   font-style: normal;
   padding: 0;
   margin: 0;
-  font-size: 5.5vw;
   overflow-x: hidden;
 }
 
@@ -16,7 +15,6 @@ h2 {
   font-weight: 400;
   font-style: normal;
   color: #f7eec5;
-  font-size: 9vw;
 }
 
 h3 {
@@ -34,7 +32,6 @@ h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 5.2vw;
   margin-bottom: 0.5rem;
   margin-top: 2rem;
 }
@@ -108,10 +105,8 @@ header {
   justify-content: left;
   gap: 0.5rem;
   color: #0258a1;
-  font-size: 5.5vw;
   text-decoration: none;
   text-align: none;
-  margin-left: 6vw;
   transition: color 0.2s ease-in-out;
 }
 .submenu {
@@ -126,27 +121,14 @@ header {
 .chevron-toggle {
   transition: transform 0.3s ease;
   transform: rotate(0deg);
-  width: 3vw;
-  height: 3vw;
-  margin-top: 0.7vw;
 }
 
 .chevron-toggle.chevron-up {
   transform: rotate(180deg);
 }
 
-.submenu a {
-  font-size: 4.75vw;
-}
 .close-nav {
   position: absolute;
-  top: 2rem;
-  right: 2rem;
-}
-
-.close-icon {
-  width: 2vw;
-  height: 2vw;
 }
 
 /* LOGO */
@@ -154,9 +136,6 @@ header {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-}
-.logo img {
-  height: 4vw;
 }
 
 .nav-left,
@@ -170,14 +149,7 @@ header {
 
 /* icon size */
 nav ul li a img {
-  height: 4vw;
-  width: 4vw;
   display: block;
-}
-
-.shopping-cart-icon {
-  height: 4.7vw;
-  width: 4.7vw;
 }
 
 /* FOOTER SECTION */
@@ -208,7 +180,6 @@ footer {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  font-size: 4.5vw;
 }
 .footer-links li {
   margin: 0.3rem 0;
@@ -227,7 +198,5 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: -3vw;
-  font-size: 3.7vw;
   color: #ffffff;
 }

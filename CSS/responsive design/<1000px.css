@@ -2,6 +2,9 @@
 
 /* typography */
 @media (min-width: 700px) {
+  body {
+    font-size: 5vw;
+  }
   h4,
   h5,
   h6 {
@@ -10,6 +13,9 @@
 }
 
 @media (min-width: 1000px) {
+  body {
+    font-size: 4.5vw;
+  }
   h4,
   h5,
   h6 {
@@ -159,7 +165,7 @@
     height: 70vw;
   }
   .landing-page .hero-overlay h1 {
-    font-size: 8.5vw;
+    font-size: 8vw;
     line-height: 7vw;
   }
   .landing-page .hero-overlay {
@@ -193,7 +199,7 @@
     width: 46vw;
   }
   .about-text h2 {
-    font-size: 8.5vw;
+    font-size: 8vw;
   }
   .about-text p {
     font-size: 2vw;

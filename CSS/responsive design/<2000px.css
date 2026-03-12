@@ -1,7 +1,11 @@
 /* MAIN */
 
 /* typography */
+
 @media (min-width: 1500px) {
+  body {
+    font-size: 4vw;
+  }
   h4,
   h5,
   h6 {
@@ -10,10 +14,13 @@
 }
 
 @media (min-width: 2000px) {
+  body {
+    font-size: 3.5vw;
+  }
   h4,
   h5,
   h6 {
-    font-size: 3vw;
+    font-size: 3.7vw;
   }
 }
 
@@ -63,15 +70,16 @@
     gap: 2vw;
   }
   nav ul li a img {
-    height: 2.2vw;
-    width: 2.2vw;
+    height: 2.5vw;
+    width: 2.5vw;
   }
   .shopping-cart-icon {
-    height: 2.7vw;
-    width: 2.7vw;
+    height: 3vw;
+    width: 3vw;
   }
   .logo img {
-    height: 2.2vw;
+    height: 2.5vw;
+    padding-top: 0.5vw;
   }
 }
 
@@ -246,14 +254,11 @@
     height: 27.5vh;
   }
   .footer-menu {
-    margin-left: 13vw;
+    margin-left: 12vw;
     margin-right: 10vw;
   }
   .footer-links {
     font-size: 3.5vw;
-  }
-  .footer-column {
-    gap: 0;
   }
   .copyright-section {
     margin-bottom: -3vw;
@@ -266,18 +271,15 @@
     height: 23.75vh;
   }
   .footer-menu {
-    margin-left: 23vw;
-    margin-right: 20vw;
+    margin-left: 20vw;
+    margin-right: 17vw;
   }
   .footer-links {
-    font-size: 2.5vw;
-  }
-  .footer-column {
-    gap: 0;
+    font-size: 3vw;
   }
   .copyright-section {
     margin-bottom: -2.5vw;
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
 }
 
