@@ -26,18 +26,18 @@
   border-bottom: 1px solid #e5e5e5;
 }
 
-/* Product Column 
+/* Product Column */
 #cart-items td:first-child {
   font-weight: 500;
-} */
+}
 
-/* Quantity Input 
+/* Quantity Input */
 .quantity-input {
   width: 50px;
   padding: 6px;
   border: 1px solid #e5e5e5;
   text-align: center;
-} */
+}
 
 /* Delete Button */
 .delete-btn {
