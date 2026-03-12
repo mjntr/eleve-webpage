@@ -4,7 +4,6 @@
   width: 100%;
   height: auto;
 }
-
 .hero-container img {
   width: 100%;
   height: auto;
@@ -37,20 +36,17 @@
   gap: 4vw;
   flex-wrap: nowrap;
 }
-
 .about-image img {
   height: 100%;
   display: block;
   object-fit: cover;
   object-position: center;
 }
-
 .about-text {
   display: flex;
   flex-direction: column;
   margin: 2rem 4rem 2rem 2rem;
 }
-
 .about-text h2 {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -62,7 +58,6 @@
   padding: 0 2rem;
   width: 100%;
 }
-
 .category-list {
   display: flex;
   flex-direction: row;
@@ -72,7 +67,6 @@
   overflow-x: auto;
   scroll-behavior: smooth; /* adds horizontal scroll behaviour */
 }
-
 .category-item img {
   width: auto;
   margin-left: 1.5vw;
@@ -104,7 +98,6 @@
   text-decoration: none;
   transition: 0.2s ease-in;
 }
-
 .category-title {
   margin-top: 0.5rem;
   display: block;

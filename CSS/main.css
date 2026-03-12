@@ -16,7 +16,6 @@ h2 {
   font-style: normal;
   color: #f7eec5;
 }
-
 h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -25,7 +24,6 @@ h3 {
   margin: 0;
   color: #ffffff;
 }
-
 h4,
 h5,
 h6 {
@@ -44,7 +42,6 @@ button {
   font-weight: 500;
   border-style: none;
 }
-
 button:hover {
   background-color: #0258a1;
   color: #ffffff;
@@ -70,6 +67,7 @@ header {
   background-color: #ffffff;
   margin-top: 0;
 }
+
 /* menu overlay */
 .menu-overlay {
   position: fixed;
@@ -99,7 +97,6 @@ header {
 .menu-dim-layer.active {
   opacity: 1;
 }
-
 .menu-overlay-content a {
   display: flex;
   justify-content: left;
@@ -109,24 +106,22 @@ header {
   text-align: none;
   transition: color 0.2s ease-in-out;
 }
+
+/* submenu */
 .submenu {
   display: none;
   margin-left: 2rem;
 }
-
 .submenu.open {
   display: block;
 }
-
 .chevron-toggle {
   transition: transform 0.3s ease;
   transform: rotate(0deg);
 }
-
 .chevron-toggle.chevron-up {
   transform: rotate(180deg);
 }
-
 .close-nav {
   position: absolute;
 }
@@ -162,14 +157,12 @@ footer {
   text-align: justify;
   margin-top: auto;
 }
-
 .footer-menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 5.5vh;
 }
-
 .footer-column {
   display: flex;
   flex-direction: column;

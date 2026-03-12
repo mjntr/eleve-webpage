@@ -289,6 +289,10 @@
 
 /* BESTSELLER PAGE */
 @media (min-width: 700px) {
+  .bestseller-page .hero-container img {
+    object-position: center 7px;
+    height: 70vw;
+  }
   .bestseller-page .hero-overlay h3 {
     font-size: 14vw;
   }
@@ -308,6 +312,12 @@
 @media (min-width: 700px) {
   .product-grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .add-to-basket-icon {
+    top: 3.5vw;
+    right: 3.5vw;
+    width: 5.5vw;
+    height: 5.5vw;
   }
   .product-name {
     font-size: 9vw;
