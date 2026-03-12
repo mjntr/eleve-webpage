@@ -1,4 +1,5 @@
 /* MAIN */
+
 /* typography */
 @media (min-width: 1500px) {
   h4,
@@ -7,6 +8,7 @@
     font-size: 4vw;
   }
 }
+
 @media (min-width: 2000px) {
   h4,
   h5,
@@ -43,7 +45,6 @@
     height: 3vw;
     width: 3vw;
   }
-
   .shopping-cart-icon {
     height: 3.7vw;
     width: 3.7vw;
@@ -52,6 +53,7 @@
     height: 3vw;
   }
 }
+
 @media (min-width: 2000px) {
   .navigation-bar {
     padding: 2.5vw 2.5vw;
@@ -64,7 +66,6 @@
     height: 2.2vw;
     width: 2.2vw;
   }
-
   .shopping-cart-icon {
     height: 2.7vw;
     width: 2.7vw;
@@ -89,17 +90,14 @@
   .menu-overlay-content a:first-child {
     margin-top: 0.25vw;
   }
-
   .submenu {
     margin-left: 2vw;
   }
-
   .chevron-toggle {
     width: 2.5vw;
     height: 2.5vw;
     margin-top: 0.2vw;
   }
-
   .submenu a {
     font-size: 3.6vw;
   }
@@ -107,7 +105,6 @@
     top: 1vw;
     right: 2vw;
   }
-
   .close-icon {
     width: 2vw;
     height: 2vw;
@@ -131,26 +128,21 @@
   .submenu {
     margin-left: 2vw;
   }
-
   .chevron-toggle {
     width: 1.8vw;
     height: 1.8vw;
     margin-top: 0.2vw;
   }
-
   .submenu a {
     font-size: 2.7vw;
   }
-
   .submenu a:first-child {
     margin-top: 1vw;
   }
-
   .close-nav {
     top: 0.4vw;
     right: 2.2vw;
   }
-
   .close-icon {
     width: 1.5vw;
     height: 1.5vw;
@@ -205,6 +197,7 @@
     font-size: 2vw;
   }
 }
+
 @media (min-width: 2000px) {
   .about-container {
     height: 47.5vw;
@@ -219,6 +212,7 @@
     font-size: 1vw;
   }
 }
+
 /* Category Section */
 @media (min-width: 1500px) {
   .product-essentials {
@@ -251,28 +245,35 @@
   .footer {
     height: 27.5vh;
   }
+  .footer-menu {
+    margin-left: 13vw;
+    margin-right: 10vw;
+  }
   .footer-links {
     font-size: 3.5vw;
   }
   .footer-column {
-    margin-left: 5vw;
-    margin-right: 5vw;
+    gap: 0;
   }
   .copyright-section {
     margin-bottom: -3vw;
     font-size: 2.5vw;
   }
 }
+
 @media (min-width: 2000px) {
   .footer {
     height: 23.75vh;
+  }
+  .footer-menu {
+    margin-left: 23vw;
+    margin-right: 20vw;
   }
   .footer-links {
     font-size: 2.5vw;
   }
   .footer-column {
-    margin-left: 4vw;
-    margin-right: 4vw;
+    gap: 0;
   }
   .copyright-section {
     margin-bottom: -2.5vw;

@@ -41,7 +41,6 @@
 /* Quantity Column Centering */
 #cart-items td:nth-child(2) {
   justify-content: center; /* center horizontal*/
-  align-items: center; /* center vertical */
 }
 
 /* Quantity Buttons */

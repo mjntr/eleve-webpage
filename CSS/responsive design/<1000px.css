@@ -1,17 +1,19 @@
 /* MAIN */
+
 /* typography */
 @media (min-width: 700px) {
   h4,
   h5,
   h6 {
-    font-size: 6vw;
+    font-size: 6.5vw;
   }
 }
+
 @media (min-width: 1000px) {
   h4,
   h5,
   h6 {
-    font-size: 5vw;
+    font-size: 5.1vw;
   }
 }
 
@@ -43,7 +45,6 @@
     height: 4.5vw;
     width: 4.5vw;
   }
-
   .shopping-cart-icon {
     height: 5.2vw;
     width: 5.2vw;
@@ -52,6 +53,7 @@
     height: 4.5vw;
   }
 }
+
 @media (min-width: 1000px) {
   .navigation-bar {
     padding: 3vw 4vw;
@@ -64,7 +66,6 @@
     height: 4vw;
     width: 4vw;
   }
-
   .shopping-cart-icon {
     height: 4.7vw;
     width: 4.7vw;
@@ -73,6 +74,7 @@
     height: 4vw;
   }
 }
+
 /* Menu Overlay */
 @media (min-width: 700px) {
   .menu-overlay {
@@ -92,13 +94,11 @@
   .submenu {
     margin-left: 2vw;
   }
-
   .chevron-toggle {
     width: 3.5vw;
     height: 3.5vw;
     margin-top: 0.3vw;
   }
-
   .submenu a {
     font-size: 5.5vw;
   }
@@ -106,7 +106,6 @@
     top: 3vw;
     right: 3vw;
   }
-
   .close-icon {
     width: 3vw;
     height: 3vw;
@@ -117,7 +116,6 @@
   .menu-overlay {
     padding-top: 5vw;
   }
-
   .menu-overlay.open {
     width: 33%;
   }
@@ -139,7 +137,6 @@
     height: 3vw;
     margin-top: 0.25vw;
   }
-
   .submenu a {
     font-size: 4.75vw;
   }
@@ -147,13 +144,14 @@
     top: 2.5vw;
     right: 3.5vw;
   }
-
   .close-icon {
     width: 2.5vw;
     height: 2.5vw;
   }
 }
+
 /* LANDING PAGE */
+
 /* hero section */
 @media (min-width: 700px) {
   .hero-container img {
@@ -169,6 +167,7 @@
     left: 5vw;
   }
 }
+
 @media (min-width: 1000px) {
   .hero-container img {
     object-position: center 4px;
@@ -200,6 +199,7 @@
     font-size: 2vw;
   }
 }
+
 @media (min-width: 1000px) {
   .about-container {
     height: 62.5vw;
@@ -229,6 +229,7 @@
     font-size: 5.5vw;
   }
 }
+
 @media (min-width: 1000px) {
   .product-essentials {
     height: 62.5vw;
@@ -241,33 +242,38 @@
     font-size: 5vw;
   }
 }
+
 /* Footer */
 @media (min-width: 700px) {
   .footer {
     height: 35vh;
   }
-  .footer-links {
-    font-size: 2.5vw;
+  .footer-menu {
+    margin-left: 7vw;
+    margin-right: 4vw;
   }
-  .footer-column {
-    margin-left: 2vw;
-    margin-right: 2vw;
+  .footer-links {
+    font-size: 5vw;
   }
   .copyright-section {
     margin-bottom: -3.5vw;
     font-size: 2.5vw;
   }
 }
+
 @media (min-width: 1000px) {
   .footer {
     height: 31.25vh;
   }
+  .footer-menu {
+    margin-left: 10vw;
+    margin-right: 7vw;
+  }
   .footer-links {
-    font-size: 4vw;
+    font-size: 4.1vw;
   }
   .footer-column {
-    margin-left: 6vw;
-    margin-right: 6vw;
+    gap: 0;
   }
   .copyright-section {
     margin-bottom: -4vw;
@@ -281,16 +287,17 @@
     font-size: 14vw;
   }
 }
+
 @media (min-width: 1000px) {
   .bestseller-page .hero-container img {
     object-position: center 7px;
     height: 62.5vw;
   }
-
   .bestseller-page .hero-overlay h3 {
     font-size: 13vw;
   }
 }
+
 /* product pictures */
 @media (min-width: 700px) {
   .product-grid {
@@ -315,11 +322,9 @@
     width: 4.5vw;
     height: 4.5vw;
   }
-
   .product-name {
     font-size: 5.5vw;
   }
-
   .product-price {
     font-size: 4.5vw;
   }
@@ -334,10 +339,9 @@
     margin: 3vw;
     font-size: 7vw;
   }
-
   #cart-items th {
     padding-bottom: 0.5vw;
-    font-size: 5.2vw;
+    font-size: 5.3vw;
   }
   #cart-items th:nth-child(2) {
     padding-left: 4.5vw;
@@ -348,11 +352,9 @@
   #cart-items td {
     font-size: 4vw;
   }
-
   .remove-icon {
     height: 2.5vw;
   }
-
   #cart-summary {
     padding-top: 3vw;
     padding-right: 4vw;
@@ -362,7 +364,6 @@
     font-size: 4vw;
     margin: 0.5vw;
   }
-
   #checkout-button {
     padding: 1.7vw 2.7vw;
     margin-top: 3vw;
@@ -377,9 +378,8 @@
   .cart-title {
     font-size: 8vw;
   }
-
   #cart-items th {
-    font-size: 6vw;
+    font-size: 5.5vw;
   }
   #cart-items th:nth-child(2) {
     padding-left: 2.5vw;
@@ -390,11 +390,9 @@
   #cart-items td {
     font-size: 4.5vw;
   }
-
   .remove-icon {
     height: 2.7vw;
   }
-
   #cart-summary {
     padding-right: 3vw;
     padding-bottom: 3vw;
@@ -403,7 +401,6 @@
     font-size: 4.5vw;
     margin: 0.75vw;
   }
-
   #checkout-button {
     padding: 1.6vw 2.6vw;
     margin-top: 3vw;
