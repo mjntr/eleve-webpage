@@ -16,7 +16,7 @@ document.querySelectorAll(".add-to-basket-icon").forEach((icon, index) => {
     const id = index; // create product id using index of the icon
 
     addToCart({ id, name, price }); // call function that adds product to cart
-    console.log(`Added to cart:${name}`);
+    alert(`${name} was added to cart!`); // pop up notification
   });
 });
 
@@ -121,7 +121,7 @@ function updateCartSummary() {
 
 // Remove Product //
 function removeFromCart(id) {
-  cartItems = cartItems.filter((item) => item.id !== id); // filters out product with given id from cart items
+  cartItems = cartItems.filter((item) => item.id !== id); // filters out product with given id from cart items: https://www.w3schools.com/jsref/jsref_filter.asp
   localStorage.setItem("cart", JSON.stringify(cartItems));
   updateCartSummary(); // updates cart display
 }
