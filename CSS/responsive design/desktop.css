@@ -249,7 +249,7 @@
 /* Footer */
 @media (min-width: 1500px) {
   .footer {
-    height: 27.5vw;
+    height: 27.5vh;
   }
   .footer-links {
     font-size: 3.5vw;
@@ -265,7 +265,7 @@
 }
 @media (min-width: 2000px) {
   .footer {
-    height: 23.75vw;
+    height: 23.75vh;
   }
   .footer-links {
     font-size: 2.5vw;

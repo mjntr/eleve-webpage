@@ -1,0 +1,134 @@
+.shopping-cart {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+.cart-title {
+  color: #0258a1;
+  text-align: center;
+}
+/* Cart Table */
+#cart-items {
+  width: 90%;
+  color: #0258a1;
+  border-collapse: collapse; /* */
+}
+
+#cart-items thead {
+  border-bottom: 2px solid #e5e5e5;
+}
+
+#cart-items th {
+  text-align: left;
+  font-weight: 600;
+}
+
+#cart-items td {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Product Column 
+#cart-items td:first-child {
+  font-weight: 500;
+} */
+
+/* Quantity Input 
+.quantity-input {
+  width: 50px;
+  padding: 6px;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+} */
+
+/* Delete Button */
+.delete-btn {
+  border: none;
+  background: none;
+  font-size: 2vw; /* adjust responsiveness!!*/
+  color: #0258a1;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  color: #e19768;
+}
+
+/* Cart Summary Box */
+#cart-summary {
+  max-width: 30%;
+  margin-left: auto;
+  padding: 2vw; /* make responsive!! */
+  border: 1px solid #e5e5e5;
+  background-color: #fafafa;
+}
+
+#cart-summary p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 5.5vw; /* make responsive!! */
+  margin-bottom: 2vw; /* make responsive!! */
+}
+
+#cart-summary p:last-of-type {
+  font-weight: 600;
+  /*font-size: ;*/
+}
+
+#checkout-button {
+  background-color: #0258a1;
+  color: #ffffff;
+}
+
+#checkout-button:hover {
+  transition: 0.2s ease-in;
+  background-color: #e19768;
+}
+
+@media (min-width: 700px) {
+  .shopping-cart {
+    height: 70vh;
+  }
+  .cart-title {
+    margin: 3vw;
+    font-size: 7vw;
+  }
+  /* #cart-items th {
+    font-size: ;
+    padding: ; */
+}
+@media (min-width: 1000px) {
+  .shopping-cart {
+    height: 65vh;
+  }
+  .cart-title {
+    margin: 4vw;
+    font-size: 8vw;
+  }
+  /* #cart-items th {
+    font-size: ;
+    padding: ; */
+}
+
+@media (min-width: 1500px) {
+  .shopping-cart {
+    height: 60vh;
+  }
+  .cart-title {
+    margin: 3vw;
+    font-size: 7vw;
+  }
+  /* #cart-items th {
+    font-size: ;
+    padding: ; */
+}
+@media (min-width: 2000px) {
+  .shopping-cart {
+    height: 55vh;
+  }
+  .cart-title {
+    margin: 2vw;
+    font-size: 6vw;
+  }
+  /* #cart-items th {
+    font-size: ;
+    padding: ; */
+}
