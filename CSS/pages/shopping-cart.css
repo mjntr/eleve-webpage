@@ -1,8 +1,8 @@
 /* SHOPPING CART */
 .shopping-cart {
-  margin-left: 10vw;
-  margin-right: 10vw;
-  margin-bottom: 10vw;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-bottom: 10rem;
 }
 .cart-title {
   color: #0258a1;
@@ -83,7 +83,7 @@
 
   background-color: #fafafa;
   margin: 0 auto;
-  min-height: 20vw;
+  min-height: 20rem;
 
   display: flex;
   flex-direction: column;

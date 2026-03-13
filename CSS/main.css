@@ -161,7 +161,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 5.5vh;
+  margin-bottom: 5.5rem;
 }
 .footer-column {
   display: flex;
