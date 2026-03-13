@@ -87,7 +87,7 @@
     padding-top: 2rem;
   }
   .menu-overlay.open {
-    width: 35%;
+    width: 30%;
     height: 100%;
   }
   .menu-overlay-content a {
@@ -255,8 +255,8 @@
     height: 15rem;
   }
   .footer-menu {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
   .footer-links {
     font-size: 0.9rem;
@@ -275,8 +275,8 @@
     height: 14rem;
   }
   .footer-menu {
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
   }
   .footer-links {
     font-size: 1.1rem;
@@ -360,13 +360,13 @@
   }
   #cart-items th {
     padding-bottom: 0.2rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   #cart-items th:nth-child(2) {
     padding-left: 0.75rem;
   }
   #cart-items td:nth-child(3) {
-    gap: 1vw;
+    gap: 1.5vw;
   }
   #cart-items td {
     font-size: 1rem;
@@ -385,8 +385,8 @@
   }
   #checkout-button {
     padding: 0.4rem 0.9rem;
-    margin-top: 1rem;
-    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -395,10 +395,10 @@
     height: 28rem;
   }
   .cart-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   #cart-items th {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   #cart-items th:nth-child(2) {
     padding-left: 1rem;
@@ -417,12 +417,12 @@
     padding-bottom: 1.2rem;
   }
   #cart-summary p {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     margin: 0.25rem;
   }
   #checkout-button {
     padding: 0.55rem 0.95rem;
     margin-top: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.25rem;
   }
 }
