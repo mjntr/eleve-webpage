@@ -254,8 +254,8 @@
     height: 12.8rem;
   }
   .footer-menu {
-    margin-left: 12rem;
-    margin-right: 12rem;
+    margin-left: 13rem;
+    margin-right: 13rem;
   }
   .footer-links {
     font-size: 1.25rem;
@@ -271,8 +271,8 @@
     height: 11.8rem;
   }
   .footer-menu {
-    margin-left: 14rem;
-    margin-right: 14rem;
+    margin-left: 16rem;
+    margin-right: 16rem;
   }
   .footer-links {
     font-size: 1.45rem;
@@ -291,7 +291,7 @@
   }
 
   .bestseller-page .hero-overlay h3 {
-    font-size: 2.75rem;
+    font-size: 3.1rem;
   }
 }
 
@@ -302,7 +302,7 @@
   }
 
   .bestseller-page .hero-overlay h3 {
-    font-size: 2.95rem;
+    font-size: 3.3rem;
   }
 }
 /* product pictures */
@@ -314,16 +314,16 @@
     position: absolute;
     top: 1.9rem;
     right: 1.9rem;
-    width: 3.3rem;
-    height: 3.3rem;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   .product-name {
-    font-size: 2.45rem;
+    font-size: 1.4rem;
   }
 
   .product-price {
-    font-size: 1.95rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -335,16 +335,16 @@
     position: absolute;
     top: 1.15rem;
     right: 1.15rem;
-    width: 2.65rem;
-    height: 2.65rem;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   .product-name {
-    font-size: 2.75rem;
+    font-size: 1.6rem;
   }
 
   .product-price {
-    font-size: 2.15rem;
+    font-size: 1.4rem;
   }
 }
 
