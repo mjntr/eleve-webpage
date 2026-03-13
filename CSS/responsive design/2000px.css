@@ -151,11 +151,11 @@
 @media (min-width: 1500px) {
   .bestseller-page .hero-container img {
     object-position: center;
-    height: 30rem;
+    height: 35rem;
   }
 
   .bestseller-page .hero-overlay h3 {
-    font-size: 3.1rem;
+    font-size: 3.2rem;
   }
 }
 
@@ -184,7 +184,7 @@
 /* SHOPPING CART */
 @media (min-width: 1500px) {
   .shopping-cart {
-    height: 30rem;
+    height: auto;
   }
   .cart-title {
     font-size: 2.45rem;

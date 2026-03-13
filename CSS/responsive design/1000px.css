@@ -354,7 +354,7 @@
 /* SHOPPING CART */
 @media (min-width: 700px) {
   .shopping-cart {
-    height: 30rem;
+    height: auto;
   }
   .cart-title {
     margin: 1rem;
@@ -394,7 +394,7 @@
 
 @media (min-width: 1000px) {
   .shopping-cart {
-    height: 28rem;
+    height: auto;
   }
   .cart-title {
     font-size: 1.8rem;
