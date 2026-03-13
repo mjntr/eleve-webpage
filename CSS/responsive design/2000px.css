@@ -28,14 +28,14 @@
 @media (min-width: 1500px) {
   button {
     padding: 1.4rem 1.6rem;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 }
 
 @media (min-width: 2000px) {
   button {
     padding: 1.6rem 1.8rem;
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 }
 
@@ -92,7 +92,7 @@
     width: 27%;
   }
   .menu-overlay-content a {
-    font-size: 4rem;
+    font-size: 1.4rem;
     margin-left: 5rem;
   }
   .menu-overlay-content a:first-child {
@@ -107,7 +107,7 @@
     margin-top: 0.2rem;
   }
   .submenu a {
-    font-size: 3.6rem;
+    font-size: 1.2rem;
   }
   .close-nav {
     top: 1rem;
@@ -127,7 +127,7 @@
     width: 22%;
   }
   .menu-overlay-content a {
-    font-size: 3.2rem;
+    font-size: 1.2rem;
     margin-left: 4rem;
   }
   .menu-overlay-content a:first-child {
@@ -142,7 +142,7 @@
     margin-top: 0.2rem;
   }
   .submenu a {
-    font-size: 2.7rem;
+    font-size: 1rem;
   }
   .submenu a:first-child {
     margin-top: 1rem;
@@ -231,7 +231,7 @@
     margin-top: 6rem;
   }
   .category-item a {
-    font-size: 4rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -244,7 +244,7 @@
     margin-top: 5rem;
   }
   .category-item a {
-    font-size: 3.5rem;
+    font-size: 1.6rem;
   }
 }
 
