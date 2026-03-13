@@ -23,7 +23,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 5rem;
-  padding: 5rem;
+  padding: 8rem;
 }
 .product-display {
   display: flex;
