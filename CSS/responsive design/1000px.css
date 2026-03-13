@@ -180,8 +180,8 @@
     height: 28rem;
   }
   .landing-page .hero-overlay h1 {
-    font-size: 1.75rem;
-    line-height: 2.25rem;
+    font-size: 2.2rem;
+    line-height: 2.7rem;
   }
   .landing-page .hero-overlay {
     bottom: 1.8rem;
@@ -199,10 +199,10 @@
     width: 16rem;
   }
   .about-text h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .about-text p {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 
@@ -215,10 +215,10 @@
     width: 18rem;
   }
   .about-text h2 {
-    font-size: 3rem;
+    font-size: 2.2rem;
   }
   .about-text p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -229,10 +229,10 @@
   }
   .category-item img {
     height: 18rem;
-    margin-top: 2.5rem;
+    margin-top: 4rem;
   }
   .category-item a {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -241,11 +241,11 @@
     height: 28rem;
   }
   .category-item img {
-    height: 16rem;
-    margin-top: 2rem;
+    height: 16.5rem;
+    margin-top: 3rem;
   }
   .category-item a {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 
