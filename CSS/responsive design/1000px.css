@@ -3,23 +3,23 @@
 /* typography */
 @media (min-width: 700px) {
   body {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   h4,
   h5,
   h6 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
 @media (min-width: 1000px) {
   body {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   h4,
   h5,
   h6 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -103,7 +103,7 @@
   .chevron-toggle {
     width: 1.25rem;
     height: 1.25rem;
-    margin-top: 0.1rem;
+    margin-top: 0.3rem;
   }
   .submenu a {
     font-size: 1.2rem;
@@ -141,7 +141,7 @@
   .chevron-toggle {
     width: 1.2rem;
     height: 1.4rem;
-    margin-top: 0.1rem;
+    margin-top: 0.4rem;
   }
   .submenu a {
     font-size: 1.4rem;
@@ -196,7 +196,7 @@
   }
   .about-image img {
     object-position: center;
-    width: 16rem;
+    width: 25rem;
   }
   .about-text h2 {
     font-size: 2rem;
@@ -212,7 +212,7 @@
   }
   .about-image img {
     object-position: center 90%;
-    width: 18rem;
+    width: 30rem;
   }
   .about-text h2 {
     font-size: 2.2rem;
@@ -255,11 +255,11 @@
     height: 15rem;
   }
   .footer-menu {
-    margin-left: 2rem;
-    margin-right: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 0.5rem;
   }
   .footer-links {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .copyright-section {
     margin-bottom: -1rem;
@@ -272,11 +272,11 @@
     height: 14rem;
   }
   .footer-menu {
-    margin-left: 3rem;
-    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
   }
   .footer-links {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .footer-column {
     gap: 0;
@@ -320,10 +320,10 @@
     height: 2rem;
   }
   .product-name {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .product-price {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }
 
@@ -339,10 +339,10 @@
     height: 1.6rem;
   }
   .product-name {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
   }
   .product-price {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -353,7 +353,7 @@
   }
   .cart-title {
     margin: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   #cart-items th {
     padding-bottom: 0.2rem;
@@ -366,10 +366,10 @@
     gap: 0.7rem;
   }
   #cart-items td {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .remove-icon {
-    height: 0.9rem;
+    height: 1rem;
   }
   #cart-summary {
     padding-top: 1rem;
@@ -377,7 +377,7 @@
     padding-bottom: 1.5rem;
   }
   #cart-summary p {
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin: 0.2rem;
   }
   #checkout-button {
@@ -404,10 +404,10 @@
     gap: 0.5rem;
   }
   #cart-items td {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
   .remove-icon {
-    height: 0.9rem;
+    height: 1.2rem;
   }
   #cart-summary {
     padding-right: 1.2rem;
