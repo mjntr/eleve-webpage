@@ -254,8 +254,8 @@
     height: 12.8rem;
   }
   .footer-menu {
-    margin-left: 8.5rem;
-    margin-right: 8.5rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
   }
   .footer-links {
     font-size: 1.25rem;
@@ -271,8 +271,8 @@
     height: 11.8rem;
   }
   .footer-menu {
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 14rem;
+    margin-right: 14rem;
   }
   .footer-links {
     font-size: 1.45rem;
@@ -380,7 +380,7 @@
 
   .remove-icon {
     height: 1.55rem;
-    padding-left: 2vw;
+    padding-left: 3vw;
   }
 
   #cart-summary {
@@ -419,6 +419,7 @@
 
   .remove-icon {
     height: 1.75rem;
+    padding-left: 4vw;
   }
 
   #cart-summary {
@@ -431,8 +432,8 @@
   }
 
   #checkout-button {
-    padding: 1.5rem 2.5rem;
-    margin-top: 2.9rem;
-    font-size: 2.95rem;
+    padding: 1.4rem 2.35rem;
+    margin-top: 2.8rem;
+    font-size: 2.8rem;
   }
 }
