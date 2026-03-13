@@ -239,6 +239,7 @@
 @media (min-width: 1000px) {
   .product-essentials {
     height: 28rem;
+    padding: 0 3rem;
   }
   .category-item img {
     height: 16.5rem;
