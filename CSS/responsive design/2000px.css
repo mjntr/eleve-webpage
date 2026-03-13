@@ -9,7 +9,7 @@
   h4,
   h5,
   h6 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -20,7 +20,7 @@
   h4,
   h5,
   h6 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -163,7 +163,7 @@
 @media (min-width: 1500px) {
   .hero-container img {
     object-position: center 6px;
-    height: 55rem;
+    height: 26rem;
   }
   .landing-page .hero-overlay h1 {
     font-size: 7rem;
@@ -178,7 +178,7 @@
 @media (min-width: 2000px) {
   .hero-container img {
     object-position: center 8px;
-    height: 47.5rem;
+    height: 24rem;
   }
   .landing-page .hero-overlay h1 {
     font-size: 6rem;
@@ -193,7 +193,7 @@
 /* About Section */
 @media (min-width: 1500px) {
   .about-container {
-    height: 55rem;
+    height: 26rem;
   }
   .about-image img {
     object-position: center 90%;
@@ -208,7 +208,7 @@
 
 @media (min-width: 2000px) {
   .about-container {
-    height: 47.5rem;
+    height: 24rem;
   }
   .about-image img {
     object-position: center 90%;
@@ -224,27 +224,27 @@
 /* Category Section */
 @media (min-width: 1500px) {
   .product-essentials {
-    height: 55rem;
+    height: 26rem;
   }
   .category-item img {
     height: 40rem;
     margin-top: 6rem;
   }
   .category-item a {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 
 @media (min-width: 2000px) {
   .product-essentials {
-    height: 47.5rem;
+    height: 24rem;
   }
   .category-item img {
     height: 35rem;
     margin-top: 5rem;
   }
   .category-item a {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -254,8 +254,8 @@
     height: 13rem;
   }
   .footer-menu {
-    margin-left: 12rem;
-    margin-right: 10rem;
+    margin-left: 4rem;
+    margin-right: 3rem;
   }
   .footer-links {
     font-size: 1.4rem;
@@ -271,8 +271,8 @@
     height: 12rem;
   }
   .footer-menu {
-    margin-left: 20rem;
-    margin-right: 17rem;
+    margin-left: 5rem;
+    margin-right: 4rem;
   }
   .footer-links {
     font-size: 1.6rem;
@@ -287,7 +287,7 @@
 @media (min-width: 1500px) {
   .bestseller-page .hero-container img {
     object-position: center;
-    height: 55rem;
+    height: 26rem;
   }
 
   .bestseller-page .hero-overlay h3 {
@@ -298,7 +298,7 @@
 @media (min-width: 2000px) {
   .bestseller-page .hero-container img {
     object-position: center;
-    height: 47.5rem;
+    height: 24rem;
   }
 
   .bestseller-page .hero-overlay h3 {
