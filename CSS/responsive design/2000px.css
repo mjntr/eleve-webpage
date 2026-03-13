@@ -226,8 +226,8 @@
   }
 
   #checkout-button {
-    padding: 1.35rem 2.3rem;
-    margin-top: 2.75rem;
-    font-size: 2.75rem;
+    padding: 0.65rem 1.05rem;
+    margin-top: 1.2rem;
+    font-size: 1.35rem;
   }
 }
