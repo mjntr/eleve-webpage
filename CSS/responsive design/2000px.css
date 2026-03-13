@@ -42,44 +42,44 @@
 /* Navigation Bar */
 @media (min-width: 1500px) {
   .navigation-bar {
-    padding: 2rem 3rem;
-    margin-top: 1rem;
+    padding: 1.4rem 1.8rem;
+    margin-top: 0.5rem;
   }
   .nav-right {
-    gap: 2.5rem;
+    gap: 1.5rem;
   }
   nav ul li a img {
-    height: 3rem;
-    width: 3rems;
+    height: 2rem;
+    width: 2rem;
   }
   .shopping-cart-icon {
-    height: 3.7rem;
-    width: 3.7rem;
+    height: 2.2rem;
+    width: 2.2rem;
   }
   .logo img {
-    height: 3rem;
+    height: 2rem;
   }
 }
 
 @media (min-width: 2000px) {
   .navigation-bar {
-    padding: 2.5rem 2.5rem;
-    margin-top: 0;
+    padding: 1.6rem 1.6rem;
+    margin-top: 0.45rem;
   }
   .nav-right {
-    gap: 2rem;
+    gap: 1.3rem;
   }
   nav ul li a img {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 1.8rem;
+    width: 1.8rem;
   }
   .shopping-cart-icon {
-    height: 3rem;
-    width: 3rem;
+    height: 2rem;
+    width: 2rem;
   }
   .logo img {
-    height: 2.5rem;
-    padding-top: 0.5rem;
+    height: 1.8rem;
+    padding-top: 0.2rem;
   }
 }
 
