@@ -251,14 +251,14 @@
 /* Footer */
 @media (min-width: 1500px) {
   .footer {
-    height: 27.5rem;
+    height: 13rem;
   }
   .footer-menu {
     margin-left: 12rem;
     margin-right: 10rem;
   }
   .footer-links {
-    font-size: 3.5rem;
+    font-size: 1.4rem;
   }
   .copyright-section {
     margin-bottom: -3rem;
@@ -268,14 +268,14 @@
 
 @media (min-width: 2000px) {
   .footer {
-    height: 12.5rem;
+    height: 12rem;
   }
   .footer-menu {
     margin-left: 20rem;
     margin-right: 17rem;
   }
   .footer-links {
-    font-size: 3rem;
+    font-size: 1.6rem;
   }
   .copyright-section {
     margin-bottom: -2.5rem;
