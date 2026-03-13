@@ -4,23 +4,23 @@
 
 @media (min-width: 1500px) {
   body {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
   h4,
   h5,
   h6 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 }
 
 @media (min-width: 2000px) {
   body {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
   h4,
   h5,
   h6 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -268,7 +268,7 @@
 
 @media (min-width: 2000px) {
   .footer {
-    height: 23.75rem;
+    height: 12.5rem;
   }
   .footer-menu {
     margin-left: 20rem;

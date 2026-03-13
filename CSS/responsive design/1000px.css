@@ -3,7 +3,7 @@
 /* typography */
 @media (min-width: 700px) {
   body {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
   h4,
   h5,
@@ -14,12 +14,12 @@
 
 @media (min-width: 1000px) {
   body {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
   h4,
   h5,
   h6 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -48,15 +48,15 @@
     gap: 1rem;
   }
   nav ul li a img {
-    height: 1.6rem;
-    width: 1.6rem;
+    height: 1.5rem;
+    width: 1.5rem;
   }
   .shopping-cart-icon {
     height: 1.85rem;
     width: 1.85rem;
   }
   .logo img {
-    height: 1.6rem;
+    height: 1.5rem;
   }
 }
 
@@ -73,8 +73,8 @@
     width: 1.5rem;
   }
   .shopping-cart-icon {
-    height: 1.65rem;
-    width: 1.65rem;
+    height: 1.85rem;
+    width: 1.85rem;
   }
   .logo img {
     height: 1.5rem;
@@ -165,7 +165,7 @@
     height: 30rem;
   }
   .landing-page .hero-overlay h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 2.5rem;
   }
   .landing-page .hero-overlay {
@@ -177,10 +177,10 @@
 @media (min-width: 1000px) {
   .hero-container img {
     object-position: center 4px;
-    height: 25rem;
+    height: 28rem;
   }
   .landing-page .hero-overlay h1 {
-    font-size: 3rem;
+    font-size: 1.75rem;
     line-height: 2.25rem;
   }
   .landing-page .hero-overlay {
@@ -208,7 +208,7 @@
 
 @media (min-width: 1000px) {
   .about-container {
-    height: 25rem;
+    height: 28rem;
   }
   .about-image img {
     object-position: center 90%;
@@ -238,7 +238,7 @@
 
 @media (min-width: 1000px) {
   .product-essentials {
-    height: 25rem;
+    height: 28rem;
   }
   .category-item img {
     height: 16rem;
@@ -269,7 +269,7 @@
 
 @media (min-width: 1000px) {
   .footer {
-    height: 12.5rem;
+    height: 14rem;
   }
   .footer-menu {
     margin-left: 3rem;
@@ -301,7 +301,7 @@
 @media (min-width: 1000px) {
   .bestseller-page .hero-container img {
     object-position: center 7px;
-    height: 25rem;
+    height: 28rem;
   }
   .bestseller-page .hero-overlay h3 {
     font-size: 4.5rem;
@@ -389,7 +389,7 @@
 
 @media (min-width: 1000px) {
   .shopping-cart {
-    height: 25rem;
+    height: 28rem;
   }
   .cart-title {
     font-size: 2.8rem;
