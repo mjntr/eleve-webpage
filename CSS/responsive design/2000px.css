@@ -4,156 +4,156 @@
 
 @media (min-width: 1500px) {
   body {
-    font-size: 4vw;
+    font-size: 4rem;
   }
   h4,
   h5,
   h6 {
-    font-size: 4vw;
+    font-size: 4rem;
   }
 }
 
 @media (min-width: 2000px) {
   body {
-    font-size: 3.5vw;
+    font-size: 3.5rem;
   }
   h4,
   h5,
   h6 {
-    font-size: 3.7vw;
+    font-size: 3.7rem;
   }
 }
 
 /* button */
 @media (min-width: 1500px) {
   button {
-    padding: 2.5vw 3vw;
-    font-size: 4.7vw;
+    padding: 2.5rem 3rem;
+    font-size: 4.7rem;
   }
 }
 
 @media (min-width: 2000px) {
   button {
-    padding: 2vw 2.5vw;
-    font-size: 3.5vw;
+    padding: 2rem 2.5rem;
+    font-size: 3.5rem;
   }
 }
 
 /* Navigation Bar */
 @media (min-width: 1500px) {
   .navigation-bar {
-    padding: 2vw 3vw;
-    margin-top: 1vw;
+    padding: 2rem 3rem;
+    margin-top: 1rem;
   }
   .nav-right {
-    gap: 2.5vw;
+    gap: 2.5rem;
   }
   nav ul li a img {
-    height: 3vw;
-    width: 3vw;
+    height: 3rem;
+    width: 3rems;
   }
   .shopping-cart-icon {
-    height: 3.7vw;
-    width: 3.7vw;
+    height: 3.7rem;
+    width: 3.7rem;
   }
   .logo img {
-    height: 3vw;
+    height: 3rem;
   }
 }
 
 @media (min-width: 2000px) {
   .navigation-bar {
-    padding: 2.5vw 2.5vw;
+    padding: 2.5rem 2.5rem;
     margin-top: 0;
   }
   .nav-right {
-    gap: 2vw;
+    gap: 2rem;
   }
   nav ul li a img {
-    height: 2.5vw;
-    width: 2.5vw;
+    height: 2.5rem;
+    width: 2.5rem;
   }
   .shopping-cart-icon {
-    height: 3vw;
-    width: 3vw;
+    height: 3rem;
+    width: 3rem;
   }
   .logo img {
-    height: 2.5vw;
-    padding-top: 0.5vw;
+    height: 2.5rem;
+    padding-top: 0.5rem;
   }
 }
 
 /* Menu Overlay */
 @media (min-width: 1500px) {
   .menu-overlay {
-    padding-top: 4.5vw;
+    padding-top: 4.5rem;
   }
   .menu-overlay.open {
     width: 27%;
   }
   .menu-overlay-content a {
-    font-size: 4vw;
-    margin-left: 5vw;
+    font-size: 4rem;
+    margin-left: 5rem;
   }
   .menu-overlay-content a:first-child {
-    margin-top: 0.25vw;
+    margin-top: 0.25rem;
   }
   .submenu {
-    margin-left: 2vw;
+    margin-left: 2rem;
   }
   .chevron-toggle {
-    width: 2.5vw;
-    height: 2.5vw;
-    margin-top: 0.2vw;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 0.2rem;
   }
   .submenu a {
-    font-size: 3.6vw;
+    font-size: 3.6rem;
   }
   .close-nav {
-    top: 1vw;
-    right: 2vw;
+    top: 1rem;
+    right: 2rem;
   }
   .close-icon {
-    width: 2vw;
-    height: 2vw;
+    width: 2rem;
+    height: 2rem;
   }
 }
 
 @media (min-width: 2000px) {
   .menu-overlay {
-    padding-top: 2.5vw;
+    padding-top: 2.5rem;
   }
   .menu-overlay.open {
     width: 22%;
   }
   .menu-overlay-content a {
-    font-size: 3.2vw;
-    margin-left: 4vw;
+    font-size: 3.2rem;
+    margin-left: 4rem;
   }
   .menu-overlay-content a:first-child {
-    margin-top: 1.5vw;
+    margin-top: 1.5rem;
   }
   .submenu {
-    margin-left: 2vw;
+    margin-left: 2rem;
   }
   .chevron-toggle {
-    width: 1.8vw;
-    height: 1.8vw;
-    margin-top: 0.2vw;
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-top: 0.2rem;
   }
   .submenu a {
-    font-size: 2.7vw;
+    font-size: 2.7rem;
   }
   .submenu a:first-child {
-    margin-top: 1vw;
+    margin-top: 1rem;
   }
   .close-nav {
-    top: 0.4vw;
-    right: 2.2vw;
+    top: 0.4rem;
+    right: 2.2rem;
   }
   .close-icon {
-    width: 1.5vw;
-    height: 1.5vw;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 }
 
@@ -163,123 +163,123 @@
 @media (min-width: 1500px) {
   .hero-container img {
     object-position: center 6px;
-    height: 55vw;
+    height: 55rem;
   }
   .landing-page .hero-overlay h1 {
-    font-size: 7vw;
-    line-height: 5.5vw;
+    font-size: 7rem;
+    line-height: 5.5rem;
   }
   .landing-page .hero-overlay {
-    bottom: 4vw;
-    left: 4vw;
+    bottom: 4rem;
+    left: 4rem;
   }
 }
 
 @media (min-width: 2000px) {
   .hero-container img {
     object-position: center 8px;
-    height: 47.5vw;
+    height: 47.5rem;
   }
   .landing-page .hero-overlay h1 {
-    font-size: 6vw;
-    line-height: 5vw;
+    font-size: 6rem;
+    line-height: 5rem;
   }
   .landing-page .hero-overlay {
-    bottom: 3vw;
-    left: 3vw;
+    bottom: 3rem;
+    left: 3rem;
   }
 }
 
 /* About Section */
 @media (min-width: 1500px) {
   .about-container {
-    height: 55vw;
+    height: 55rem;
   }
   .about-image img {
     object-position: center 90%;
   }
   .about-text h2 {
-    font-size: 7vw;
+    font-size: 7rem;
   }
   .about-text p {
-    font-size: 2vw;
+    font-size: 2rem;
   }
 }
 
 @media (min-width: 2000px) {
   .about-container {
-    height: 47.5vw;
+    height: 47.5rem;
   }
   .about-image img {
     object-position: center 90%;
   }
   .about-text h2 {
-    font-size: 6vw;
+    font-size: 6rem;
   }
   .about-text p {
-    font-size: 1vw;
+    font-size: 1rem;
   }
 }
 
 /* Category Section */
 @media (min-width: 1500px) {
   .product-essentials {
-    height: 55vw;
+    height: 55rem;
   }
   .category-item img {
-    height: 40vw;
-    margin-top: 6vw;
+    height: 40rem;
+    margin-top: 6rem;
   }
   .category-item a {
-    font-size: 4vw;
+    font-size: 4rem;
   }
 }
 
 @media (min-width: 2000px) {
   .product-essentials {
-    height: 47.5vw;
+    height: 47.5rem;
   }
   .category-item img {
-    height: 35vw;
-    margin-top: 5vw;
+    height: 35rem;
+    margin-top: 5rem;
   }
   .category-item a {
-    font-size: 3.5vw;
+    font-size: 3.5rem;
   }
 }
 
 /* Footer */
 @media (min-width: 1500px) {
   .footer {
-    height: 27.5vh;
+    height: 27.5rem;
   }
   .footer-menu {
-    margin-left: 12vw;
-    margin-right: 10vw;
+    margin-left: 12rem;
+    margin-right: 10rem;
   }
   .footer-links {
-    font-size: 3.5vw;
+    font-size: 3.5rem;
   }
   .copyright-section {
-    margin-bottom: -3vw;
-    font-size: 2.5vw;
+    margin-bottom: -3rem;
+    font-size: 2.5rem;
   }
 }
 
 @media (min-width: 2000px) {
   .footer {
-    height: 23.75vh;
+    height: 23.75rem;
   }
   .footer-menu {
-    margin-left: 20vw;
-    margin-right: 17vw;
+    margin-left: 20rem;
+    margin-right: 17rem;
   }
   .footer-links {
-    font-size: 3vw;
+    font-size: 3rem;
   }
   .copyright-section {
-    margin-bottom: -2.5vw;
-    font-size: 2.5vw;
+    margin-bottom: -2.5rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -287,22 +287,22 @@
 @media (min-width: 1500px) {
   .bestseller-page .hero-container img {
     object-position: center;
-    height: 55vw;
+    height: 55rem;
   }
 
   .bestseller-page .hero-overlay h3 {
-    font-size: 11.5vw;
+    font-size: 11.5rem;
   }
 }
 
 @media (min-width: 2000px) {
   .bestseller-page .hero-container img {
     object-position: center;
-    height: 47.5vw;
+    height: 47.5rem;
   }
 
   .bestseller-page .hero-overlay h3 {
-    font-size: 10vw;
+    font-size: 10rem;
   }
 }
 /* product pictures */
@@ -312,18 +312,18 @@
   }
   .add-to-basket-icon {
     position: absolute;
-    top: 2vw;
-    right: 2vw;
-    width: 3.5vw;
-    height: 3.5vw;
+    top: 2rem;
+    right: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
   }
 
   .product-name {
-    font-size: 4.1vw;
+    font-size: 4.1rem;
   }
 
   .product-price {
-    font-size: 3.5vw;
+    font-size: 3.5rem;
   }
 }
 
@@ -333,106 +333,106 @@
   }
   .add-to-basket-icon {
     position: absolute;
-    top: 1.2vw;
-    right: 1.2vw;
-    width: 2.7vw;
-    height: 2.7vw;
+    top: 1.2rem;
+    right: 1.2rem;
+    width: 2.7rem;
+    height: 2.7rem;
   }
 
   .product-name {
-    font-size: 3vw;
+    font-size: 3rem;
   }
 
   .product-price {
-    font-size: 2.5vw;
+    font-size: 2.5rem;
   }
 }
 
 /* SHOPPING CART */
 @media (min-width: 1500px) {
   .shopping-cart {
-    height: 60vh;
+    height: 60rem;
   }
   .cart-title {
-    font-size: 7vw;
+    font-size: 7rem;
   }
 
   #cart-items th {
-    font-size: 4.5vw;
+    font-size: 4.5rem;
   }
   #cart-items th:nth-child(2) {
-    padding-left: 3vw;
+    padding-left: 3rem;
   }
   #cart-items th:nth-child(2),
   #cart-items td:nth-child(2) {
     width: 30%; /* Quantity */
   }
   #cart-items td:nth-child(3) {
-    gap: 3vw;
+    gap: 3rem;
   }
   #cart-items th:nth-child(3),
   #cart-items td:nth-child(3) {
     width: 30%; /* Price + Icon */
   }
   #cart-items td {
-    font-size: 4vw;
+    font-size: 4rem;
   }
 
   .remove-icon {
-    height: 2.4vw;
-    padding-left: 2vw;
+    height: 2.4rem;
+    padding-left: 2rem;
   }
 
   #cart-summary {
-    padding-right: 2.5vw;
-    padding-bottom: 2.5vw;
+    padding-right: 2.5rem;
+    padding-bottom: 2.5rem;
   }
   #cart-summary p {
-    font-size: 4vw;
-    margin: 0.5vw;
+    font-size: 4rem;
+    margin: 0.5rem;
   }
 
   #checkout-button {
-    padding: 1.4vw 2.4vw;
-    margin-top: 4vw;
-    font-size: 4vw;
+    padding: 1.4rem 2.4rem;
+    margin-top: 4rem;
+    font-size: 4rem;
   }
 }
 
 @media (min-width: 2000px) {
   .shopping-cart {
-    height: 55vh;
+    height: 55rem;
   }
   .cart-title {
-    font-size: 6vw;
+    font-size: 6rem;
   }
 
   #cart-items th {
-    font-size: 4vw;
+    font-size: 4rem;
   }
   #cart-items th:nth-child(2) {
-    padding-left: 2.1vw;
+    padding-left: 2.1rem;
   }
   #cart-items td {
-    font-size: 3.5vw;
+    font-size: 3.5rem;
   }
 
   .remove-icon {
-    height: 2vw;
+    height: 2rem;
   }
 
   #cart-summary {
-    padding-right: 2.5vw;
-    padding-bottom: 2.5vw;
+    padding-right: 2.5rem;
+    padding-bottom: 2.5rem;
   }
   #cart-summary p {
-    font-size: 4vw;
-    margin: 0.5vw;
+    font-size: 4rem;
+    margin: 0.5rem;
   }
 
   #checkout-button {
-    padding: 1.5vw 2.5vw;
-    margin-top: 4vw;
-    font-size: 4vw;
+    padding: 1.5rem 2.5rem;
+    margin-top: 4rem;
+    font-size: 4rem;
   }
 }
