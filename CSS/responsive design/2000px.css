@@ -288,7 +288,7 @@
 /* BESTSELLER PAGE */
 @media (min-width: 1500px) {
   .bestseller-page .hero-container img {
-    object-position: center 10px;
+    object-position: center;
     height: 26rem;
   }
 
@@ -299,7 +299,7 @@
 
 @media (min-width: 2000px) {
   .bestseller-page .hero-container img {
-    object-position: center 13px;
+    object-position: center;
     height: 24rem;
   }
 

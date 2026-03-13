@@ -293,7 +293,7 @@
 /* BESTSELLER PAGE */
 @media (min-width: 700px) {
   .bestseller-page .hero-container img {
-    object-position: center 7px;
+    object-position: center;
     height: 30rem;
   }
   .bestseller-page .hero-overlay h3 {
@@ -303,7 +303,7 @@
 
 @media (min-width: 1000px) {
   .bestseller-page .hero-container img {
-    object-position: center 7px;
+    object-position: center;
     height: 28rem;
   }
   .bestseller-page .hero-overlay h3 {
