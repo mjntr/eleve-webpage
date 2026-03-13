@@ -4,12 +4,12 @@
 
 @media (min-width: 1500px) {
   body {
-    font-size: 1.15rem;
+    font-size: 1.5rem;
   }
   h4,
   h5,
   h6 {
-    font-size: 1.35rem;
+    font-size: 1.5rem;
   }
 }
 
