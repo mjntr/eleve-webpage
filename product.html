@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="CSS/pages/home.css" />
     <link rel="stylesheet" href="CSS/pages/bestseller.css" />
     <link rel="stylesheet" href="CSS/pages/shopping-cart.css" />
+    <link rel="stylesheet" href="CSS/pages/product.css" />
     <link rel="stylesheet" href="CSS/responsive design/1000px.css" />
     <link rel="stylesheet" href="CSS/responsive design/2000px.css" />
 
@@ -102,6 +103,70 @@
         </div>
       </div>
     </header>
+
+    <main>
+      <!-- Product 1 -->
+      <div class="product-page">
+        <!-- Product Gallery -->
+        <div class="product-gallery">
+          <!-- Main Image & Arrows -->
+          <div class="main-image">
+            <button class="arrow-left" onclick="slideLeft()">
+              <img src="icons /arrow-left.svg" alt="previous picture" />
+            </button>
+
+            <img
+              id="mainProductImage"
+              src="Images/bestseller /aria-bikini.jpg"
+              alt="aria triangle bikini"
+            />
+
+            <button class="arrow-right" onclick="slideRight()">
+              <img src="icons /arrow-right.svg" alt="following picture" />
+            </button>
+          </div>
+
+          <!-- Additional Images -->
+          <div class="additional images">
+            <img
+              src="Images/bestseller /aria-bikini4.jpg"
+              alt="aria triangle bikini"
+            />
+            <img
+              src="Images/bestseller /aria-bikini5.jpg"
+              alt="aria triangle bikini"
+            />
+            <img
+              src="Images/bestseller /aria-bikini2.jpg"
+              alt="aria triangle bikini"
+            />
+          </div>
+        </div>
+
+        <!-- Product Info -->
+        <div class="product-info">
+          <p class="product-name">Aria Triangle Bikini</p>
+          <p class="product-price">49,00€</p>
+
+          <!-- Size Table -->
+          <label for="size-select">Select size:</label>
+          <select id="size-select" name="size">
+            <option value="" disabled selected>-- Please choose! --</option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+          </select>
+
+          <!-- Add to Basket Icon -->
+          <button class="add-to-basket-icon">
+            <img src="icons /shopping-cart.svg" alt="add to cart" />
+          </button>
+        </div>
+      </div>
+    </main>
+
     <footer>
       <!-- Footer Menu -->
       <section class="footer-menu">
