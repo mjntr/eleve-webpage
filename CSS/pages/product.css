@@ -32,8 +32,8 @@
 
 .arrow-left,
 .arrow-right img {
-  width: 2rem;
-  height: 2rem;
+  width: 20px;
+  height: 20px;
 }
 
 /* Additional Images */
@@ -53,6 +53,7 @@
 #size-select {
   padding: 0.5rem 1rem;
   font-size: 1rem;
+  color: #0258a1;
   width: 150px;
 }
 
