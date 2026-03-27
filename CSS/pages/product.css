@@ -4,6 +4,19 @@
   gap: 30px;
   padding: 20px;
 }
+
+/* Gallery to the left */
+.product-gallery {
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+
+/* Main Image */
+.main-image {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
 .main-image img {
   width: 100%;
   display: block;
@@ -15,11 +28,38 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10;
 }
 
 .arrow-left,
 .arrow-right {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Additional Images */
+.additional-images {
+  width: 40vw;
+  object-fit: cover;
+  border: 2px solid transparent;
+  transition: border 0.2s;
+}
+
+/* Product Info */
+.product-info {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#size-select {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background: #ffff;
+  width: 150px;
+}
+
+.add-to-basket-icon img {
   width: 2rem;
   height: 2rem;
 }
