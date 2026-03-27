@@ -1,6 +1,6 @@
 .product-page {
   display: flex;
-  flex-wrap: wrap;
+  overflow-x: hidden;
   gap: 30px;
   padding: 20px;
 }
