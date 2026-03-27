@@ -1,0 +1,25 @@
+.product-page {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+}
+.main-image img {
+  width: 100%;
+  display: block;
+}
+
+/* Arrows */
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.arrow-left,
+.arrow-right {
+  width: 2rem;
+  height: 2rem;
+}
