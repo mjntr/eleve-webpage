@@ -52,9 +52,12 @@
 
 #size-select {
   padding: 0.5rem 1rem;
-  font-size: 1rem;
+  width: 10rem;
+}
+
+.product-page p {
   color: #0258a1;
-  width: 150px;
+  font-size: 1rem;
 }
 
 .add-to-basket-icon img {
