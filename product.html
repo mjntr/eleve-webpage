@@ -105,29 +105,20 @@
     </header>
 
     <main>
-      <!-- Product 1 -->
       <div class="product-page">
         <!-- Product Gallery -->
         <div class="product-gallery">
-          <!-- Main Image & Arrows -->
-          <div class="main-image">
-            <div class="arrow-left" onclick="slideImage(-1)">
-              <img src="icons /arrow-left.svg" alt="previous picture" />
-            </div>
+          <!-- Arrow Left-->
+          <div class="arrow-left" onclick="slideImage(-1)">
+            <img src="icons /arrow-left.svg" alt="previous picture" />
+          </div>
 
+          <!-- Product Pictures -->
+          <div class="product-images">
             <img
-              id="mainProductImage"
               src="Images/bestseller /aria-bikini.jpg"
               alt="aria triangle bikini"
             />
-
-            <div class="arrow-right" onclick="slideImage(1)">
-              <img src="icons /arrow-right.svg" alt="following picture" />
-            </div>
-          </div>
-
-          <!-- Additional Images -->
-          <div class="additional-images">
             <img
               src="Images/bestseller /aria-bikini5.jpg"
               alt="aria triangle bikini"
@@ -140,6 +131,11 @@
               src="Images/bestseller /aria-bikini2.jpg"
               alt="aria triangle bikini"
             />
+          </div>
+
+          <!-- Arrow Right -->
+          <div class="arrow-right" onclick="slideImage(1)">
+            <img src="icons /arrow-right.svg" alt="following picture" />
           </div>
         </div>
 
@@ -161,9 +157,9 @@
           </select>
 
           <!-- Add to Basket Icon -->
-          <button class="add-to-basket-icon">
+          <div class="add-to-basket-icon">
             <img src="icons /shopping-cart.svg" alt="add to cart" />
-          </button>
+          </div>
         </div>
       </div>
     </main>
