@@ -10,6 +10,8 @@
 .product-gallery {
   width: 50vw;
   position: relative;
+  display: flex;
+  justify-content: center;
   margin: 2rem;
 }
 
@@ -20,13 +22,7 @@
   align-items: center;
   transition: transform 0.4s ease;
   overflow-x: hidden;
-  width: 40vw;
-}
-
-.product-images img {
-  width: 100%;
-  flex: 0 0 100%;
-  object-fit: cover;
+  width: auto;
 }
 
 /* Arrows */
@@ -73,6 +69,7 @@
   background: #fff;
   width: 10rem;
 }
+
 .add-to-basket-icon {
   display: flex;
   align-items: center;
