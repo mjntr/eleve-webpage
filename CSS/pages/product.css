@@ -16,10 +16,11 @@
 /* Images */
 .product-images {
   display: flex;
+  justify-content: center;
+  align-items: center;
   transition: transform 0.4s ease;
   overflow-x: hidden;
   width: 40vw;
-  align-self: center;
 }
 
 .product-images img {
@@ -43,7 +44,7 @@
 }
 
 .arrow-right {
-  right: 0rem;
+  right: 0.75rem;
 }
 .arrow-left img,
 .arrow-right img {
@@ -67,18 +68,16 @@
 
 #size-select {
   padding: 0.5rem 1rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #0258a1;
   background: #fff;
   width: 10rem;
 }
-
-.product-page p,
-.product-info select,
-.product-info option {
-  color: #0258a1;
+.add-to-basket-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
-
 .add-to-basket-icon p {
   font-size: 1.3rem;
 }
