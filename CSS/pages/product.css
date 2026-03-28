@@ -2,9 +2,8 @@
   display: flex;
   overflow-x: hidden;
   gap: 30px;
-  padding: 20px;
+  padding: 4rem;
   flex-wrap: wrap;
-  margin: 3rem;
 }
 
 /* Gallery to the left */
@@ -12,6 +11,7 @@
   flex: 1 1 400px;
   max-width: 50vw;
   position: relative;
+  margin: 2rem;
 }
 
 /* Images */
@@ -69,11 +69,6 @@
 .product-page p {
   color: #0258a1;
   font-size: 1rem;
-}
-
-.add-to-basket-icon {
-  all: unset;
-  align-self: flex-start;
 }
 
 .add-to-basket-icon img {
