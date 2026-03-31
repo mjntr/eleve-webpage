@@ -1,18 +1,21 @@
 .product-page {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
   overflow-x: hidden;
-  gap: 30px;
+  gap: 3rem;
   padding: 4rem;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
 }
 
 /* Gallery to the left */
 .product-gallery {
-  width: 50vw;
-  position: relative;
+  flex: 1 1 50%;
   display: flex;
   justify-content: center;
-  margin: 2rem;
+  position: relative;
+  margin: 0;
 }
 
 /* Images */
@@ -49,7 +52,7 @@
 
 /* Product Info */
 .product-info {
-  flex: 1 1 250px;
+  flex: 1 1 45%px;
   display: flex;
   flex-direction: column;
 }
