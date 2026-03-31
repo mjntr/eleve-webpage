@@ -3,7 +3,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  overflow-x: hidden;
   gap: 3rem;
   padding: 4rem;
   flex-wrap: no-wrap;
@@ -13,17 +12,17 @@
 .product-gallery {
   flex: 1 1 50%;
   display: flex;
-  justify-content: center;
-  position: relative;
-  margin: 0;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1rem;
 }
 
 /* Images */
-.product-images {
-  display: flex;
-  transition: transform 0.4s ease;
-  overflow-x: hidden;
+.product-images img {
+  flex: 0 0 auto;
   width: auto;
+  height: auto;
+  object-position: center;
 }
 
 /* Arrows */
@@ -47,10 +46,9 @@
 .arrow-right img {
   width: 2rem;
   height: 2rem;
-  display: block;
 }
 
-/* Product Info */
+/* Product Info on the right */
 .product-info {
   flex: 1 1 45%px;
   display: flex;
@@ -58,9 +56,11 @@
 }
 .product-name {
   font-size: 1.5rem;
+  font-weight: 600;
 }
 .product-price {
   font-size: 1.3rem;
+  font-weight: 500;
 }
 
 #size-select {
