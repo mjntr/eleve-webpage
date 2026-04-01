@@ -23,7 +23,7 @@ showImage(currentImageIndex); // Show the first image on page load
 // ADD TO CART FUNCTIONALITY //
 
 // Size Selection
-const sizeButtons = document.querySelectorAll("#ize-table .size-option"); // Select all size option buttons
+const sizeButtons = document.querySelectorAll("#size-table .size-option"); // Select all size option buttons
 
 sizeButtons.forEach((btn) => {
   btn.addEventListener("click", () => {
@@ -36,7 +36,7 @@ sizeButtons.forEach((btn) => {
 const addToCartBtn = document.querySelector(".add-to-cart-btn"); // Select the add to cart button
 if (addToCartBtn) {
   addToCartBtn.addEventListener("click", () => {
-    const name = document.querySelector(".prodcutt-name").textContent; // Get product name
+    const name = document.querySelector(".product-name").textContent; // Get product name
     const priceText = document.querySelector(".product-price").textContent; // Get product price
     const price = parseFloat(priceText.replace("€", "").replace(",", ".")); // Convert price text to number
 
