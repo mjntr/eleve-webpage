@@ -89,18 +89,13 @@
   background: #fff;
   width: 10rem;
 }
-.add-to-basket-icon {
-  display: flex;
-  align-items: center;
-  margin: 0;
-}
 
-.add-to-basket-icon p {
+.add-to-basket p {
   font-size: 1.3rem;
   color: #0258a1;
 }
 
-.add-to-basket-icon img {
+.add-to-basket img {
   width: 2rem;
   height: 2rem;
 }
