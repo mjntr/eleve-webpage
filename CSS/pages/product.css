@@ -82,9 +82,8 @@
 }
 .size-option {
   padding: 0.5rem 1rem;
-  background: #e19768;
+  background: #e5e5e5;
   border: none;
-  cursor: pointer;
   color: #0258a1;
   font-size: 1rem;
 }
@@ -95,10 +94,11 @@
 .size-option.active {
   background-color: #e19768;
   color: #0258a1;
+  border: #0258a1 2px solid;
 }
 
-.product-description p {
-  font-size: 1rem;
+.product-description {
+  font-size: 0.75rem;
   color: #0258a1;
 }
 
@@ -109,7 +109,7 @@
 }
 
 .add-to-cart-btn p {
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: #0258a1;
 }
 .add-to-cart-btn:hover {
@@ -118,6 +118,6 @@
 }
 
 .add-to-cart-btn img {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.8rem;
+  height: 1.8rem;
 }
