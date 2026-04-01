@@ -90,12 +90,12 @@
   width: 10rem;
 }
 
-.add-to-basket p {
+.add-to-cart-btn p {
   font-size: 1.3rem;
   color: #0258a1;
 }
 
-.add-to-basket img {
+.add-to-cart-btn img {
   width: 2rem;
   height: 2rem;
 }
