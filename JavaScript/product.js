@@ -1,6 +1,9 @@
+let currentImageIndex = 0;
+const ImageTrackList = document.querySelectorAll(".product-images img"); // Select all images in the image track
+
 function showImage(index) {
   ImageTrackList.forEach((image, i) => {
-    image.style.display = i === index ? "block" : "none";
+    image.style.display = i === index ? "block" : "none"; // Show the current image, hide others
   });
 }
 

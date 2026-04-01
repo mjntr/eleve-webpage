@@ -63,13 +63,13 @@
   flex: 1 1 45%px;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   max-width: 500px;
 }
 
 .product-name {
   font-size: 1.5rem;
   font-weight: 600;
+  margin-top: 0;
 }
 .product-price {
   font-size: 1.3rem;
@@ -92,8 +92,7 @@
 .add-to-basket-icon {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
+  margin: 0;
 }
 
 .add-to-basket-icon p {
