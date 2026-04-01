@@ -61,21 +61,6 @@ sizeButtons.forEach((btn) => {
   });
 });
 
-// Confirm Size and Add to Cart //
-confirmSizeBtn.addEventListener("click", () => {
-  if (!selectedSize) {
-    alert("Please select a size first!");
-    return;
-  }
-
-  // Add selected size to current product and add to cart
-  const productWithSize = { ...currentProduct, size: selectedSize }; // create new product object with size
-  addToCart(productWithSize); // add product with size to cart
-  sizeOverlay.classList.add("hidden"); // hide size overlay
-  alert(`${currentProduct.name} (Size: ${selectedSize}) was added to cart!`); // show confirmation message
-  currentProduct = null; // reset current product
-});
-
 // Add Product to Local Storage //
 function addToCart(product) {
   // check if product exists in cart //
