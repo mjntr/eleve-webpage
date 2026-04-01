@@ -31,6 +31,7 @@
 .product-images img {
   flex: 0 0 100%;
   width: 100%;
+  min-width: 40vw;
   object-fit: cover;
   margin: 0 auto;
 }
@@ -60,7 +61,7 @@
 
 /* Product Info on the right */
 .product-info {
-  flex: 1 1 45%px;
+  flex: 1 1 45%;
   display: flex;
   flex-direction: column;
   max-width: 500px;
@@ -103,6 +104,10 @@
 }
 
 .add-to-cart-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
   padding: 0.5rem 1rem;
   background: #e19768;
   max-width: fit-content;
@@ -111,6 +116,7 @@
 .add-to-cart-btn p {
   font-size: 1rem;
   color: #0258a1;
+  margin: 0;
 }
 .add-to-cart-btn:hover {
   color: #0258a1;
@@ -120,4 +126,5 @@
 .add-to-cart-btn img {
   width: 1.8rem;
   height: 1.8rem;
+  display: inline-block;
 }
