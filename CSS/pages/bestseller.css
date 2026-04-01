@@ -87,3 +87,78 @@
   color: #0258a1;
   margin-top: 0.7rem;
 }
+
+/* Size Table Overlay */
+.size-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.size-overlay.hidden {
+  display: none; /* Hide the overlay when not needed */
+}
+
+.size-overlay-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 300px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.size-overlay-content h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: #0258a1;
+}
+
+.size-options {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+  margin-bottom: 1.5rem;
+}
+.size-option {
+  padding: 0.5rem 1rem;
+  background: #e5e5e5;
+  border: none;
+  color: #0258a1;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.size-option:hover {
+  background: #e19768;
+  color: #0258a1;
+}
+.size-option.active {
+  background: #e19768;
+  color: #0258a1;
+  border: 2px solid #0258a1;
+}
+
+#confirm-size-button {
+  padding: 0.5rem 1rem;
+  background-color: #0258a1;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#confirm-size-button:hover {
+  background-color: #e19768;
+  color: #fff;
+}
