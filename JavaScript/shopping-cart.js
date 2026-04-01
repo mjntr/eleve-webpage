@@ -8,9 +8,28 @@ const cartTableBody = document.querySelector("#cart-items tbody"); // select par
 // Size Overlay //
 const sizeOverlay = document.getElementById("size-overlay"); // select size overlay
 const sizeButtons = document.querySelectorAll(".size-option"); // select all size options
-const confirmSizeBtn = document.getElementById("confirm-size"); // select confirm button in size overlay
+const confirmSizeBtn = document.getElementById("confirm-size-btn"); // select confirm button in size overlay
 let selectedSize = null; // variable to store selected size
 let currentProduct = null; // variable to store current product being added to cart
+
+// Confirm Size and Add to Cart //
+if (confirmSizeBtn) {
+  confirmSizeBtn.addEventListener("click", () => {
+    if (!selectedSize) {
+      alert("Please select a size first!"); // show alert if no size is selected
+      return;
+    }
+    if (!currentProduct) {
+      alert("No product selected!"); // show alert if no product is selected (should not happen, but added as safety check)
+      return;
+    }
+    const productWithSize = { ...currentProduct, size: selectedSize }; // create new product object with size
+    addToCart(productWithSize); // add product with size to cart
+    sizeOverlay.classList.add("hidden"); // hide size overlay
+    alert(`${currentProduct.name} (Size: ${selectedSize}) was added to cart!`); // show confirmation message
+    currentProduct = null; // reset current product
+  });
+}
 
 // Add Product to Cart (with Size Selection) //
 document.querySelectorAll(".add-to-basket-icon").forEach((icon, index) => {
