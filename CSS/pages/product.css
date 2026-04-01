@@ -81,6 +81,11 @@
   gap: 0.5rem;
   margin: 1rem 0;
 }
+.size-label {
+  font-size: 1rem;
+  color: #0258a1;
+  margin-bottom: 0.5rem;
+}
 .size-option {
   padding: 0.5rem 1rem;
   background: #e5e5e5;
@@ -108,7 +113,7 @@
   align-items: center;
   gap: 0.5rem;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1.5rem;
   background: #e19768;
   max-width: fit-content;
 }
@@ -124,7 +129,7 @@
 }
 
 .add-to-cart-btn img {
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 1.5rem;
+  height: 1.5rem;
   display: inline-block;
 }
