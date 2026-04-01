@@ -86,16 +86,29 @@
   padding: 0.5rem 1rem;
   font-size: 1rem;
   color: #0258a1;
-  background: #fff;
+  background: #e5e5e5;
+  border: none;
   width: 10rem;
+}
+.product-description {
+  font-size: 1rem;
+  color: #0258a1;
+}
+.add-to-cart-btn {
+  padding: 0.5rem 1rem;
+  background: #e19768;
 }
 
 .add-to-cart-btn p {
   font-size: 1.3rem;
   color: #0258a1;
 }
+.add-to-cart-btn:hover {
+  color: #0258a1;
+  background-color: #e19768;
+}
 
 .add-to-cart-btn img {
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
