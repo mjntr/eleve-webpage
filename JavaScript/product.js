@@ -18,4 +18,4 @@ function slideImage(direction) {
   showImage(currentImageIndex);
 }
 
-showImage(currentImageIndex);
+showImage(currentImageIndex); // Show the first image on page load
