@@ -20,4 +20,37 @@ function slideImage(direction) {
 
 showImage(currentImageIndex); // Show the first image on page load
 
-// Add to Cart Functionality
+// ADD TO CART FUNCTIONALITY //
+
+// Size Selection
+const sizeButtons = document.querySelectorAll("#ize-table .size-option"); // Select all size option buttons
+
+sizeButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    sizeButtons.forEach((b) => b.classList.remove("active")); // Remove active class from all buttons
+    btn.classList.add("active"); // Add active class to clicked button
+  });
+});
+
+// Add to Cart Button
+const addToCartBtn = document.querySelector(".add-to-cart-btn"); // Select the add to cart button
+if (addToCartBtn) {
+  addToCartBtn.addEventListener("click", () => {
+    const name = document.querySelector(".prodcutt-name").textContent; // Get product name
+    const priceText = document.querySelector(".product-price").textContent; // Get product price
+    const price = parseFloat(priceText.replace("€", "").replace(",", ".")); // Convert price text to number
+
+    const activeSizeBtn = document.querySelector(
+      "#size-table .size-option.active",
+    ); // Get the active size button
+    if (!activeSizeBtn) {
+      alert("Please select a size!"); // Alert if no size is selected
+      return;
+    }
+    const size = activeSizeBtn.dataset.size; // Get selected size from data attribute
+
+    const product = { id: Date.now(), name, price, size }; // Create product object with unique ID
+    addToCart(product); // Add product to cart
+    alert(`${name} (Size: ${size}) was added to cart!`); // Show confirmation message
+  });
+}
