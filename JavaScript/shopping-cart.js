@@ -7,7 +7,7 @@ const cartTableBody = document.querySelector("#cart-items tbody"); // select par
 
 // Size Overlay //
 const sizeOverlay = document.getElementById("size-overlay"); // select size overlay
-const sizeButtons = document.querySelectorAll(".size-option"); // select all size options
+const sizeButtons = document.querySelectorAll("#size-overlay .size-option"); // select all size options
 const confirmSizeBtn = document.getElementById("confirm-size-btn"); // select confirm button in size overlay
 let selectedSize = null; // variable to store selected size
 let currentProduct = null; // variable to store current product being added to cart

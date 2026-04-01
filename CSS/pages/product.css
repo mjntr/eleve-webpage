@@ -66,6 +66,7 @@
   flex-direction: column;
   max-width: 500px;
   margin: 0;
+  padding: 0.5rem 1rem;
 }
 
 .product-name {
@@ -124,7 +125,7 @@
   padding: 1rem 1.5rem;
   background: #0258a1;
   max-width: fit-content;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .add-to-cart-btn p {
