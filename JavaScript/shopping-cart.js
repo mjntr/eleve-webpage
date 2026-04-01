@@ -94,7 +94,7 @@ function updateCartSummary() {
       subtotal += item.price * item.quantity; // calculates subtotal
       return `
       <tr>
-        <td>${item.name} ${item.size ? `(Size:${item.size})` : ""} </td> 
+        <td>${item.name} ${item.size ? `(Size: ${item.size})` : ""} </td> 
         <td>
         <button class="quantity-btn" data-id="${item.id}" data-size="${item.size || ""}" data-action="minus">-</button>
         <span class="quantity">${item.quantity}</span>

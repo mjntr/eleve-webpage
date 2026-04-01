@@ -108,8 +108,9 @@
 }
 
 .product-description {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: #0258a1;
+  margin-bottom: 0.8rem;
 }
 
 .add-to-cart-btn {
