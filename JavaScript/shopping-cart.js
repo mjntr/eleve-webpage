@@ -5,7 +5,14 @@ let cartItems = JSON.parse(localStorage.getItem("cart")) || []; // JSON.parse co
 const cartSummary = document.getElementById("cart-summary"); // select cart summary section
 const cartTableBody = document.querySelector("#cart-items tbody"); // select part of table where products will be inserted
 
-// Add Product to Cart //
+// Size Overlay //
+const sizeOverlay = document.getElementById("size-overlay"); // select size overlay
+const sizeButtons = document.querySelectorAll(".size-option"); // select all size options
+const confirmSizeBtn = document.getElementById("confirm-size"); // select confirm button in size overlay
+let selectedSize = null; // variable to store selected size
+let currentProduct = null; // variable to store current product being added to cart
+
+// Add Product to Cart (with Size Selection) //
 document.querySelectorAll(".add-to-basket-icon").forEach((icon, index) => {
   // selects all basket icons on page; adding click event to every icon
   icon.addEventListener("click", () => {
@@ -15,15 +22,47 @@ document.querySelectorAll(".add-to-basket-icon").forEach((icon, index) => {
     const price = parseFloat(priceText.replace("€", "").replace(",", ".")); // convert price text into number by removing €: https://www.w3schools.com/jsref/jsref_parsefloat.asp
     const id = index; // create product id using index of the icon
 
-    addToCart({ id, name, price }); // call function that adds product to cart
-    alert(`${name} was added to cart!`); // pop up notification
+    currentProduct = { id, name, price }; // call function that adds product to cart
+
+    // Show size selection overlay when add to cart is clicked
+    sizeOverlay.classList.remove("hidden"); // show size overlay by removing hidden class
+    selectedSize = null; // reset selected size
+    sizeButtons.forEach((btn) => {
+      btn.classList.remove("active"); // remove active class from all size buttons
+    });
   });
+});
+
+// Size Selection //
+sizeButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    sizeButtons.forEach((b) => b.classList.remove("active")); // remove active class from all buttons
+    btn.classList.add("active"); // add active class to clicked button
+    selectedSize = btn.dataset.size; // store selected size in variable using data attribute: https://www.w3schools.com/jsref/prop_html_dataset.asp
+  });
+});
+
+// Confirm Size and Add to Cart //
+confirmSizeBtn.addEventListener("click", () => {
+  if (!selectedSize) {
+    alert("Please select a size first!");
+    return;
+  }
+
+  // Add selected size to current product and add to cart
+  const productWithSize = { ...currentProduct, size: selectedSize }; // create new product object with size
+  addToCart(productWithSize); // add product with size to cart
+  sizeOverlay.classList.add("hidden"); // hide size overlay
+  alert(`${currentProduct.name} (Size: ${selectedSize}) was added to cart!`); // show confirmation message
+  currentProduct = null; // reset current product
 });
 
 // Add Product to Local Storage //
 function addToCart(product) {
   // check if product exists in cart //
-  const existing = cartItems.find((item) => item.id === product.id); //.find() searches cartItems array for an item with same id: https://www.w3schools.com/jsref/jsref_find.asp
+  const existing = cartItems.find(
+    (item) => item.id === product.id && item.size === product.size,
+  ); //.find() searches cartItems array for an item with same id: https://www.w3schools.com/jsref/jsref_find.asp
   if (existing) {
     existing.quantity += 1; //increase quantity instead of adding new item
   } else {
@@ -51,14 +90,14 @@ function updateCartSummary() {
       subtotal += item.price * item.quantity; // calculates subtotal
       return `
       <tr>
-        <td>${item.name} </td> 
+        <td>${item.name} ${item.size ? `(Size:${item.size})` : ""} </td> 
         <td>
-        <button class="quantity-btn" data-id="${item.id}" data-action="minus">-</button>
+        <button class="quantity-btn" data-id="${item.id}" data-size="${item.size || ""}" data-action="minus">-</button>
         <span class="quantity">${item.quantity}</span>
-        <button class="quantity-btn" data-id="${item.id}" data-action="plus">+</button>
+        <button class="quantity-btn" data-id="${item.id}" data-size="${item.size || ""}" data-action="plus">+</button>
         </td>
         <td>${(item.price * item.quantity).toFixed(2)}€
-        <button class="remove-item" data-id="${item.id}" 
+        <button class="remove-item" data-id="${item.id}" data-size="${item.size || ""}" 
         style="background:none; border:none;"> <img src="icons /trashcan-icon.svg" alt="remove" class="remove-icon">
         </button>
       </td>
@@ -87,7 +126,7 @@ function updateCartSummary() {
     // selects all trashcan-icons in cart
     btn.addEventListener("click", () => {
       // remove item from cart when clicked
-      removeFromCart(parseInt(btn.dataset.id)); // parseInt: converts string into number
+      removeFromCart(parseInt(btn.dataset.id), btn.dataset.size); // parseInt: converts string into number
     });
   });
 
@@ -97,8 +136,11 @@ function updateCartSummary() {
     // selects all + and - buttons in cart table
     btn.addEventListener("click", () => {
       const id = parseInt(btn.dataset.id); // gets product id from buttons data attribute + coverts into number
+      const size = btn.dataset.size; // gets product size from buttons data attribute
       const action = btn.dataset.action; // gets action from button
-      const product = cartItems.find((item) => item.id === id); // find product in cart by its ID
+      const product = cartItems.find(
+        (item) => item.id === id && item.size === size,
+      ); // find product in cart by its ID
       if (!product) return; // stops running if product not found
 
       if (action === "plus") product.quantity += 1; // depending on action increase/decrease quantity by 1
@@ -120,8 +162,10 @@ function updateCartSummary() {
 }
 
 // Remove Product //
-function removeFromCart(id) {
-  cartItems = cartItems.filter((item) => item.id !== id); // filters out product with given id from cart items: https://www.w3schools.com/jsref/jsref_filter.asp
+function removeFromCart(id, size) {
+  cartItems = cartItems.filter(
+    (item) => !(item.id === id && item.size === size),
+  ); // filters out product with given id from cart items: https://www.w3schools.com/jsref/jsref_filter.asp
   localStorage.setItem("cart", JSON.stringify(cartItems));
   updateCartSummary(); // updates cart display
 }

@@ -30,9 +30,7 @@
 
 .product-images img {
   flex: 0 0 100%;
-  width: auto;
-  max-height: 100%;
-  height: auto;
+  width: 100%;
   object-fit: cover;
   margin: 0 auto;
 }
