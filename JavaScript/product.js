@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // IMAGE SLIDER FUNCTIONALITY //
+
   let currentImageIndex = 0;
   const ImageTrackList = document.querySelectorAll(".product-images img"); // Select all images in the image track
 
@@ -39,9 +41,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const addToCartBtn = document.querySelector(".add-to-cart-btn"); // Select the add to cart button
   if (addToCartBtn) {
     addToCartBtn.addEventListener("click", () => {
-      const name = document.querySelector(".product-name").textContent; // Get product name
-      const priceText = document.querySelector(".product-price").textContent; // Get product price
-      const price = parseFloat(priceText.replace("€", "").replace(",", ".")); // Convert price text to number
+      const nameElement = document.querySelector(".product-name"); // Get product name
+      const priceElement = document.querySelector(".product-price"); // Get product price
 
       const activeSizeBtn = document.querySelector(
         "#size-table .size-option.active",
@@ -50,11 +51,38 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Please select a size!"); // Alert if no size is selected
         return;
       }
+
+      if (!nameElement || !priceElement) {
+        alert("Product information is missing!");
+        return;
+      }
+
+      const name = nameElement.textContent.trim(); // Get product name text
+      const price = parseFloat(
+        priceElement.textContent.replace("€", "").replace(",", "."),
+      ); // Convert price text to number
+
       const size = activeSizeBtn.dataset.size; // Get selected size from data attribute
 
-      const product = { id: Date.now(), name, price, size }; // Create product object with unique ID
+      const product = {
+        name,
+        price,
+        size,
+      };
       addToCart(product); // Add product to cart
       alert(`${name} (Size: ${size}) was added to cart!`); // Show confirmation message
     });
+  }
+  function addToCart(product) {
+    let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+    const existing = cartItems.find(
+      (item) => item.name === product.name && item.size === product.size,
+    );
+    if (existing) {
+      existing.quantity += 1; // Increase quantity if product already in cart
+    } else {
+      cartItems.push({ ...product, quantity: 1 }); // Add new product to cart
+    }
+    localStorage.setItem("cart", JSON.stringify(cartItems)); // Save cart to localStorage
   }
 });
