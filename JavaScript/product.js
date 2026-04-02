@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const size = activeSizeBtn.dataset.size; // Get selected size from data attribute
 
       const product = {
-        ide: name,
+        id: name,
         name,
         price,
         size,
