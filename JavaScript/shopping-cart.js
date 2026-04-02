@@ -155,7 +155,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if (action === "plus") product.quantity += 1; // depending on action increase/decrease quantity by 1
         if (action === "minus") {
           product.quantity -= 1;
-          if (product.quantity <= 0) removeFromCart(id); // item is removed from cart if quantity is 0 or less
+          if (product.quantity <= 0) removeFromCart(id, size); // item is removed from cart if quantity is 0 or less
+          return;
         }
 
         localStorage.setItem("cart", JSON.stringify(cartItems)); // saves updated cart to localStorage
