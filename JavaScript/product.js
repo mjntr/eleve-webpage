@@ -65,6 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const size = activeSizeBtn.dataset.size; // Get selected size from data attribute
 
       const product = {
+        ide: name,
         name,
         price,
         size,
@@ -78,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function addToCart(product) {
     let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
     const existing = cartItems.find(
-      (item) => item.name === product.name && item.size === product.size,
+      (item) => item.id === product.id && item.size === product.size,
     );
     if (existing) {
       existing.quantity += 1; // Increase quantity if product already in cart
