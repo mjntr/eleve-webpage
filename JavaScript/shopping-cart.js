@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // selects all trashcan-icons in cart
       btn.addEventListener("click", () => {
         // remove item from cart when clicked
-        removeFromCart(parseInt(btn.dataset.id)); // parseInt: converts string into number
+        removeFromCart(btn.dataset.id); // parseInt: converts string into number
       });
     });
 
@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
     cartTableBody.querySelectorAll(".quantity-btn").forEach((btn) => {
       // selects all + and - buttons in cart table
       btn.addEventListener("click", () => {
-        const id = parseInt(btn.dataset.id); // gets product id from buttons data attribute + coverts into number
+        const id = btn.dataset.id; // gets product id from buttons data attribute + coverts into number
         const size = btn.dataset.size; // gets product size from buttons data attribute
         const action = btn.dataset.action; // gets action from button
         const product = cartItems.find((item) => item.id === id); // find product in cart by its ID
@@ -169,9 +169,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Remove Product //
+  // Remove Product Function Global //
   window.removeFromCart = function (id) {
-    cartItems = cartItems.filter((item) => !(item.id === id)); // filters out product with given id from cart items: https://www.w3schools.com/jsref/jsref_filter.asp
+    cartItems = cartItems.filter((item) => item.id !== id); // filters out product with given id from cart items: https://www.w3schools.com/jsref/jsref_filter.asp
     localStorage.setItem("cart", JSON.stringify(cartItems));
     updateCartSummary(); // updates cart display
   };
