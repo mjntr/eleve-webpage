@@ -73,6 +73,17 @@ document.addEventListener("DOMContentLoaded", () => {
       alert(`${name} (Size: ${size}) was added to cart!`); // Show confirmation message
     });
   }
+
+  // Remove function
+  function removeFromCart(name, size) {
+    let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+    cartItems = cartItems.filter(
+      (item) => !(item.name === name && item.size === size),
+    ); // Remove item from cart based on name and size
+    localStorage.setItem("cart", JSON.stringify(cartItems)); // Save updated cart to localStorage
+  }
+
+  // Add to Cart function
   function addToCart(product) {
     let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
     const existing = cartItems.find(
@@ -80,9 +91,21 @@ document.addEventListener("DOMContentLoaded", () => {
     );
     if (existing) {
       existing.quantity += 1; // Increase quantity if product already in cart
+      if (existing.quantity <= 0) {
+        removeFromCart(existing.name, existing.size); // Remove item if quantity is 0 or less
+      }
     } else {
       cartItems.push({ ...product, quantity: 1 }); // Add new product to cart
     }
     localStorage.setItem("cart", JSON.stringify(cartItems)); // Save cart to localStorage
   }
+
+  document.querySelectorAll(".remove-item").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const name = btn.dataset.name; // Get product name from data attribute
+      const size = btn.dataset.size; // Get product size from data attribute
+      removeFromCart(name, size); // Remove product from cart
+      alert(`${name} (Size: ${size}) was removed from cart!`); // Show confirmation message
+    });
+  });
 });
