@@ -1,3 +1,5 @@
+// PRODUCT PAGE //
+
 document.addEventListener("DOMContentLoaded", () => {
   // IMAGE SLIDER FUNCTIONALITY //
 
@@ -61,11 +63,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const price = parseFloat(
         priceElement.textContent.replace("€", "").replace(",", "."),
       ); // Convert price text to number
-
       const size = activeSizeBtn.dataset.size; // Get selected size from data attribute
 
+      const id = name + "-" + size; // Create a unique product ID using name and size
       const product = {
-        id: name,
+        id,
         name,
         price,
         size,
@@ -78,9 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Add to Cart function
   function addToCart(product) {
     let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
-    const existing = cartItems.find(
-      (item) => item.id === product.id && item.size === product.size,
-    );
+    const existing = cartItems.find((item) => item.id === product.id); // Check if product with same ID already exists in cart
     if (existing) {
       existing.quantity += 1; // Increase quantity if product already in cart
     } else {

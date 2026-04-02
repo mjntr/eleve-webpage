@@ -101,12 +101,12 @@ document.addEventListener("DOMContentLoaded", () => {
       <tr>
         <td>${item.name} ${item.size ? `(Size: ${item.size})` : ""} </td> 
         <td>
-        <button class="quantity-btn" data-id="${item.id}" data-size="${item.size || ""}" data-action="minus">-</button>
+        <button class="quantity-btn" data-id="${item.id}" data-action="minus">-</button>
         <span class="quantity">${item.quantity}</span>
-        <button class="quantity-btn" data-id="${item.id}" data-size="${item.size || ""}" data-action="plus">+</button>
+        <button class="quantity-btn" data-id="${item.id}" data-action="plus">+</button>
         </td>
         <td>${(item.price * item.quantity).toFixed(2)}€
-        <button class="remove-item" data-id="${item.id}" data-size="${item.size || ""}" 
+        <button class="remove-item" data-id="${item.id}"
         style="background:none; border:none;"> <img src="icons /trashcan-icon.svg" alt="remove" class="remove-icon">
         </button>
       </td>
@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // selects all trashcan-icons in cart
       btn.addEventListener("click", () => {
         // remove item from cart when clicked
-        removeFromCart(parseInt(btn.dataset.id), btn.dataset.size); // parseInt: converts string into number
+        removeFromCart(parseInt(btn.dataset.id)); // parseInt: converts string into number
       });
     });
 
@@ -147,15 +147,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const id = parseInt(btn.dataset.id); // gets product id from buttons data attribute + coverts into number
         const size = btn.dataset.size; // gets product size from buttons data attribute
         const action = btn.dataset.action; // gets action from button
-        const product = cartItems.find(
-          (item) => item.id === id && item.size === size,
-        ); // find product in cart by its ID
+        const product = cartItems.find((item) => item.id === id); // find product in cart by its ID
         if (!product) return; // stops running if product not found
 
         if (action === "plus") product.quantity += 1; // depending on action increase/decrease quantity by 1
         if (action === "minus") {
           product.quantity -= 1;
-          if (product.quantity <= 0) removeFromCart(id, size); // item is removed from cart if quantity is 0 or less
+          if (product.quantity <= 0) removeFromCart(id); // item is removed from cart if quantity is 0 or less
           return;
         }
 
@@ -172,13 +170,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Remove Product //
-  function removeFromCart(id, size) {
-    cartItems = cartItems.filter(
-      (item) => !(item.id === id && item.size === size),
-    ); // filters out product with given id from cart items: https://www.w3schools.com/jsref/jsref_filter.asp
+  window.removeFromCart = function (id) {
+    cartItems = cartItems.filter((item) => !(item.id === id)); // filters out product with given id from cart items: https://www.w3schools.com/jsref/jsref_filter.asp
     localStorage.setItem("cart", JSON.stringify(cartItems));
     updateCartSummary(); // updates cart display
-  }
+  };
 
   // Checkout //
   function handleCheckout() {
