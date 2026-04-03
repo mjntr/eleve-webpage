@@ -32,7 +32,7 @@
   position: relative;
 }
 
-/* Image Container */
+/* Product Image Container */
 .product-image {
   position: relative;
   width: 100%;
@@ -40,21 +40,19 @@
 }
 
 /* Clickable Area */
-.product-display a {
-  display: block;
-  position: relative;
-  pointer-events: none; /* prevents clicking on the border */
-}
-
-.product-display a::after {
-  content: "";
+.product-image .product-link {
   position: absolute;
   top: 15%;
   left: 15%;
   width: 70%;
   height: 70%;
   z-index: 2;
+  display: block;
   pointer-events: auto; /* allows clicking on the inner area */
+}
+
+.product-image a:not(.product-link) {
+  pointer-events: none; /* prevents clicking on the outer area */
 }
 
 /* Product Images */
