@@ -1,7 +1,10 @@
+// Cart Manager: Handles cart operations and localStorage management
+
 window.cartItems = JSON.parse(localStorage.getItem("cart")) || []; // JSON.parse converts data to string; if no cart exists yet, use empty array
 
 // Add Product to Cart //
 window.addToCart = function (product) {
+  // window:https://developer.mozilla.org/en-US/docs/Web/API/Window; allows functions and variables to be accessed globally across different scripts
   // check if product exists in cart //
   const existing = window.cartItems.find(
     (item) => item.id === product.id && item.size === product.size,

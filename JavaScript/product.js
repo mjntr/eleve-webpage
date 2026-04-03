@@ -1,6 +1,11 @@
 // PRODUCT PAGE //
 document.addEventListener("DOMContentLoaded", () => {
+  // Ensure the DOM is fully loaded before running the script
+  // https://www.w3schools.com/js/js_events_load.asp
+
   // IMAGE SLIDER FUNCTIONALITY //
+  // This section handles the image slider on the product page, allowing users to click through different product images.
+  // https://www.geeksforgeeks.org/javascript/creating-custom-image-slider-javascript/
   let currentImageIndex = 0;
   const ImageTrackList = document.querySelectorAll(".product-images img"); // Select all images in the image track
 
