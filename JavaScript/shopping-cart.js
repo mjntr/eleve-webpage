@@ -25,10 +25,16 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("No product selected!"); // show alert if no product is selected (should not happen, but added as safety check)
         return;
       }
-      const productWithSize = { ...currentProduct, size: selectedSize }; // create new product object with size
+
+      const productWithSize = {
+        ...currentProduct,
+        size: selectedSize,
+        id: currentProduct.name + "-" + selectedSize,
+        quantity: 1,
+      }; // create new product object with size
+
       window.addToCart(productWithSize); // add product with size to cart
       cartItems = window.cartItems; // update local cart items variable after adding to cart
-
       sizeOverlay.classList.add("hidden"); // hide size overlay
       alert(
         `${currentProduct.name} (Size: ${selectedSize}) was added to cart!`,
@@ -45,9 +51,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const name = productDiv.querySelector(".product-name").textContent; // get product name from html
       const priceText = productDiv.querySelector(".product-price").textContent; // get price from html
       const price = parseFloat(priceText.replace("€", "").replace(",", ".")); // convert price text into number by removing €: https://www.w3schools.com/jsref/jsref_parsefloat.asp
-      const id = index; // create product id using index of the icon
+      const id = name; // use product name as id (can be changed to a more unique identifier if available)
 
-      currentProduct = { id, name, price }; // call function that adds product to cart
+      currentProduct = { name, price }; // call function that adds product to cart
 
       // Show size selection overlay when add to cart is clicked
       sizeOverlay.classList.remove("hidden"); // show size overlay by removing hidden class
