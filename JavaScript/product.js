@@ -1,8 +1,6 @@
 // PRODUCT PAGE //
-
 document.addEventListener("DOMContentLoaded", () => {
   // IMAGE SLIDER FUNCTIONALITY //
-
   let currentImageIndex = 0;
   const ImageTrackList = document.querySelectorAll(".product-images img"); // Select all images in the image track
 
@@ -72,20 +70,9 @@ document.addEventListener("DOMContentLoaded", () => {
         price,
         size,
       };
-      addToCart(product); // Add product to cart
+      window.addToCart(product); // Add product to cart
       alert(`${name} (Size: ${size}) was added to cart!`); // Show confirmation message
+      sizeButtons.forEach((b) => b.classList.remove("active")); // Reset size selection after adding to cart
     });
-  }
-
-  // Add to Cart function
-  function addToCart(product) {
-    let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
-    const existing = cartItems.find((item) => item.id === product.id); // Check if product with same ID already exists in cart
-    if (existing) {
-      existing.quantity += 1; // Increase quantity if product already in cart
-    } else {
-      cartItems.push({ ...product, quantity: 1 }); // Add new product to cart
-    }
-    localStorage.setItem("cart", JSON.stringify(cartItems)); // Save cart to localStorage
   }
 });
