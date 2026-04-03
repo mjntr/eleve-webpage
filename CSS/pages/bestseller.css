@@ -30,20 +30,22 @@
   flex-direction: column;
   align-items: center;
 }
-
-.product-display a {
-  display: block;
-  width: 90%;
-  height: 90%;
-  margin: auto;
-  position: relative;
-  overflow: hidden;
-}
-
 .product-image {
   position: relative;
   width: 100%;
   overflow: hidden;
+}
+
+.product-display a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  box-sizing: border-box;
+}
+.product-display a .product-image {
+  width: 100%;
+  pointer-events: none; /* prevents klicking on the border */
 }
 
 /* Product Images */
