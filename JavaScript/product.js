@@ -72,7 +72,12 @@ document.addEventListener("DOMContentLoaded", () => {
       };
       window.addToCart(product); // Add product to cart
       alert(`${name} (Size: ${size}) was added to cart!`); // Show confirmation message
+
       sizeButtons.forEach((b) => b.classList.remove("active")); // Reset size selection after adding to cart
+
+      if (window.updateCartSummary) {
+        window.updateCartSummary(); // Update cart summary if the function is defined
+      }
     });
   }
 });
