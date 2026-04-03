@@ -231,3 +231,39 @@
     font-size: 1.35rem;
   }
 }
+
+/* PRODUCT PAGE */
+@media (min-width: 1500px) {
+  .product-name {
+    font-size: 2rem;
+  }
+
+  .product-price {
+    font-size: 1.8rem;
+  }
+  .size-label {
+    font-size: 1.3rem;
+  }
+  .size-option {
+    font-size: 1.3rem;
+    padding: 0.8rem 1.4rem;
+  }
+  .product-description h3 {
+    font-size: 1.2rem;
+  }
+  .product-description p {
+    font-size: 1.3rem;
+  }
+  .add-to-cart-btn {
+    padding: 1.3rem 1.8rem;
+  }
+  .add-to-cart-btn p {
+    font-size: 1.3rem;
+  }
+
+  .arrow-left img,
+  .arrow-right img {
+    width: 3rem;
+    height: 3rem;
+  }
+}
